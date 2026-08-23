@@ -1,0 +1,311 @@
+{
+  "schema": "bca-public-dashboard-v1",
+  "generated_at": "2026-08-23T03:09:06.371798+00:00",
+  "status": "RUNNING",
+  "data_freshness": "CURRENT",
+  "kpis": {
+    "opportunities_scanned": 0,
+    "items_observed": 0,
+    "scan_runs": 0,
+    "agent_count": 19,
+    "fresh_opportunities": 0,
+    "technically_ready": 0,
+    "selected": 0,
+    "queued": 0,
+    "rejected": 0,
+    "policy_blocked": 0,
+    "submissions": 0,
+    "paid": 0
+  },
+  "money": {
+    "pipeline_value": 0.0,
+    "pending_rewards": 0.0,
+    "approved_rewards": 0.0,
+    "cash_received": 0.0,
+    "realized_costs": 0.0,
+    "net_profit": 0.0
+  },
+  "agents": [
+    {
+      "role": "SOURCE_INTELLIGENCE",
+      "status": "CONFIGURED",
+      "trigger": "initial/30d/failure",
+      "kpi": "current evidence ratio",
+      "last_run": "N/A",
+      "last_decision": "N/A",
+      "failures": 0,
+      "escalation": "—"
+    },
+    {
+      "role": "BOUNTY_HUNTER",
+      "status": "CONFIGURED",
+      "trigger": "4h",
+      "kpi": "eligible per 100 scanned",
+      "last_run": "N/A",
+      "last_decision": "N/A",
+      "failures": 0,
+      "escalation": "—"
+    },
+    {
+      "role": "MONEY_VERIFIER",
+      "status": "CONFIGURED",
+      "trigger": "discovery",
+      "kpi": "confirmed reward rate",
+      "last_run": "N/A",
+      "last_decision": "N/A",
+      "failures": 0,
+      "escalation": "—"
+    },
+    {
+      "role": "POLICY_OFFICER",
+      "status": "CONFIGURED",
+      "trigger": "after money",
+      "kpi": "zero violations",
+      "last_run": "N/A",
+      "last_decision": "N/A",
+      "failures": 0,
+      "escalation": "—"
+    },
+    {
+      "role": "COMPETITION_ANALYST",
+      "status": "CONFIGURED",
+      "trigger": "shortlist",
+      "kpi": "obsolete attempt rate",
+      "last_run": "N/A",
+      "last_decision": "N/A",
+      "failures": 0,
+      "escalation": "—"
+    },
+    {
+      "role": "FEASIBILITY_ANALYST",
+      "status": "CONFIGURED",
+      "trigger": "shortlist",
+      "kpi": "difficulty calibration",
+      "last_run": "N/A",
+      "last_decision": "N/A",
+      "failures": 0,
+      "escalation": "—"
+    },
+    {
+      "role": "PAYER_RELIABILITY",
+      "status": "CONFIGURED",
+      "trigger": "scoring/outcome",
+      "kpi": "payment calibration",
+      "last_run": "N/A",
+      "last_decision": "N/A",
+      "failures": 0,
+      "escalation": "—"
+    },
+    {
+      "role": "CLAIM_COLLISION",
+      "status": "CONFIGURED",
+      "trigger": "before work/checkpoint",
+      "kpi": "avoided obsolete work",
+      "last_run": "N/A",
+      "last_decision": "N/A",
+      "failures": 0,
+      "escalation": "—"
+    },
+    {
+      "role": "DYNAMIC_EV",
+      "status": "CONFIGURED",
+      "trigger": "execution checkpoint",
+      "kpi": "realized EV/hour",
+      "last_run": "N/A",
+      "last_decision": "N/A",
+      "failures": 0,
+      "escalation": "—"
+    },
+    {
+      "role": "CAPITAL_ALLOCATOR",
+      "status": "CONFIGURED",
+      "trigger": "scan/checkpoint",
+      "kpi": "confidence-adjusted EV/hour",
+      "last_run": "N/A",
+      "last_decision": "N/A",
+      "failures": 0,
+      "escalation": "—"
+    },
+    {
+      "role": "REPOSITORY_INTAKE",
+      "status": "CONFIGURED",
+      "trigger": "selection",
+      "kpi": "reproducible baseline",
+      "last_run": "N/A",
+      "last_decision": "N/A",
+      "failures": 0,
+      "escalation": "—"
+    },
+    {
+      "role": "SOLUTION_ARCHITECT",
+      "status": "CONFIGURED",
+      "trigger": "baseline pass",
+      "kpi": "plans without redesign",
+      "last_run": "N/A",
+      "last_decision": "N/A",
+      "failures": 0,
+      "escalation": "—"
+    },
+    {
+      "role": "SOFTWARE_ENGINEER",
+      "status": "CONFIGURED",
+      "trigger": "plan",
+      "kpi": "tests/acceptance",
+      "last_run": "N/A",
+      "last_decision": "N/A",
+      "failures": 0,
+      "escalation": "—"
+    },
+    {
+      "role": "QA_ENGINEER",
+      "status": "CONFIGURED",
+      "trigger": "patch",
+      "kpi": "known failure rate",
+      "last_run": "N/A",
+      "last_decision": "N/A",
+      "failures": 0,
+      "escalation": "—"
+    },
+    {
+      "role": "RED_TEAM_REVIEWER",
+      "status": "CONFIGURED",
+      "trigger": "QA pass",
+      "kpi": "pre-submit defects",
+      "last_run": "N/A",
+      "last_decision": "N/A",
+      "failures": 0,
+      "escalation": "—"
+    },
+    {
+      "role": "SUBMISSION_COMPOSER",
+      "status": "CONFIGURED",
+      "trigger": "red-team pass",
+      "kpi": "format correction rate",
+      "last_run": "N/A",
+      "last_decision": "N/A",
+      "failures": 0,
+      "escalation": "—"
+    },
+    {
+      "role": "REVIEW_RESPONSE",
+      "status": "CONFIGURED",
+      "trigger": "changes requested",
+      "kpi": "revision acceptance",
+      "last_run": "N/A",
+      "last_decision": "N/A",
+      "failures": 0,
+      "escalation": "—"
+    },
+    {
+      "role": "PAYOUT_CFO",
+      "status": "CONFIGURED",
+      "trigger": "state change/daily",
+      "kpi": "cash accuracy",
+      "last_run": "N/A",
+      "last_decision": "N/A",
+      "failures": 0,
+      "escalation": "—"
+    },
+    {
+      "role": "LEARNING_STRATEGY",
+      "status": "CONFIGURED",
+      "trigger": "weekly/milestones",
+      "kpi": "profit per attempt",
+      "last_run": "N/A",
+      "last_decision": "N/A",
+      "failures": 0,
+      "escalation": "—"
+    }
+  ],
+  "self_improvement": {
+    "active_strategy_version": "baseline-v1",
+    "status": "WAITING FOR DATA",
+    "shadow_candidate": "N/A",
+    "shadow_cycles": 0,
+    "calibration": "WAITING FOR DATA",
+    "attributed_outcomes": 0,
+    "financially_settled_outcomes": 0,
+    "critic_findings": 0,
+    "synchronization_score": 0.0
+  },
+  "portfolio": {
+    "status": "WAITING FOR DATA",
+    "primary": {
+      "name": "N/A",
+      "lane": "N/A",
+      "raw_ev": 0.0,
+      "risk_adjusted_ev": 0.0,
+      "predicted_acceptance": 0.0,
+      "predicted_payment": 0.0,
+      "capability_score": 0.0,
+      "payment_reliability": 0.0,
+      "concentration_penalty": 0.0
+    },
+    "exploration_shadow": {
+      "name": "N/A",
+      "lane": "N/A",
+      "observational_only": true
+    }
+  },
+  "capability_builder": {
+    "active_playbooks": 0,
+    "shadow_playbooks": 0,
+    "failure_signature": "N/A",
+    "sample_size": 0,
+    "confidence": 0.0,
+    "success_rate": 0.0
+  },
+  "counterfactual": {
+    "cases_watched": 0,
+    "settled_positive": 0,
+    "settled_negative": 0,
+    "censored_selected": 0,
+    "unknown": 0
+  },
+  "revenue_assurance": {
+    "submitted": 0,
+    "accepted": 0,
+    "merged": 0,
+    "reward_approved": 0,
+    "payout_pending": 0,
+    "paid": 0,
+    "open_cases": 0,
+    "overdue": 0,
+    "verified_cash": 0.0
+  },
+  "opportunities": [],
+  "sources": [
+    {
+      "source": "Algora",
+      "enabled": false,
+      "status": "MONITOR_ONLY_POLICY_INCOMPLETE",
+      "last_verified": "2026-08-19",
+      "items_found": 0,
+      "failures": 0
+    },
+    {
+      "source": "Frantic",
+      "enabled": true,
+      "status": "VERIFIED_ACTIVE",
+      "last_verified": "2026-08-22",
+      "items_found": 0,
+      "failures": 0
+    },
+    {
+      "source": "Opire",
+      "enabled": false,
+      "status": "POLICY_BLOCKED",
+      "last_verified": "2026-08-19",
+      "items_found": 0,
+      "failures": 0
+    },
+    {
+      "source": "Public GitHub reward-labelled issues",
+      "enabled": false,
+      "status": "LEAD_ONLY",
+      "last_verified": "2026-08-19",
+      "items_found": 0,
+      "failures": 0
+    }
+  ]
+}
