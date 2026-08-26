@@ -1,12 +1,12 @@
 {
   "schema": "bca-public-dashboard-v1",
-  "generated_at": "2026-08-26T19:05:40.163262+00:00",
+  "generated_at": "2026-08-26T22:27:15.068680+00:00",
   "status": "RUNNING",
   "data_freshness": "CURRENT",
   "kpis": {
     "opportunities_scanned": 120,
-    "items_observed": 2025,
-    "scan_runs": 80,
+    "items_observed": 3050,
+    "scan_runs": 120,
     "agent_count": 50,
     "fresh_opportunities": 7,
     "technically_ready": 0,
@@ -579,7 +579,7 @@
     "reward_approved": 0,
     "payout_pending": 0,
     "paid": 0,
-    "open_cases": 1,
+    "open_cases": 0,
     "overdue": 0,
     "verified_cash": 0.0
   },
@@ -605,14 +605,14 @@
     "paid": 0.0
   },
   "rrae_pipeline": {
-    "detected": 10,
+    "detected": 18,
     "qualified": 0,
     "matched": 0,
     "executed": 0,
     "converted": 0,
     "paid": 0,
     "owner_actions_required": 7,
-    "rejected": 10
+    "rejected": 18
   },
   "revenue_by_engine": {
     "rrae": 0.0,
@@ -631,23 +631,23 @@
   },
   "universal_revenue": {
     "status": "ACTIVE",
-    "decisions_this_cycle": 130,
+    "decisions_this_cycle": 138,
     "routed": 0,
     "needs_analysis": 0,
-    "needs_verification": 93,
-    "rejected": 37,
+    "needs_verification": 0,
+    "rejected": 138,
     "unknown_models": 0,
     "strategies_enabled": 11,
-    "radar_raw_signals": 130,
-    "radar_normalized_signals": 130,
-    "money_verified": 3,
+    "radar_raw_signals": 138,
+    "radar_normalized_signals": 138,
+    "money_verified": 4,
     "portfolio_status": "WAITING_FOR_VERIFIED_ECONOMICS",
     "primary_strategy": "N/A",
     "primary_ev_per_hour": 0.0,
     "primary_time_to_payment_hours": 0.0,
     "fast_cash_strategy": "N/A",
     "fast_cash_probability_48h": 0.0,
-    "risk_adjusted_pipeline": 340.4125,
+    "risk_adjusted_pipeline": 340.41270000000003,
     "excellence_status": "SYSTEM_IS_WORKING_BUT_SUBOPTIMAL",
     "learning_events_processed": 0,
     "safe_adaptations": 0,
@@ -660,12 +660,12 @@
     "territory_count": 8,
     "profitable_territories": 0,
     "demand_signals": 0,
-    "money_flows": 123,
+    "money_flows": 124,
     "executable_money_flows": 0,
     "routes_evaluated": 0,
     "routes_selected": 0,
-    "asset_proposals": 1,
-    "shadow_experiments": 1,
+    "asset_proposals": 2,
+    "shadow_experiments": 2,
     "human_only_gates": 0,
     "selected_territory": "territory-721152d9d7ea07f8d55b",
     "concentration_risk": "HIGH",
@@ -691,7 +691,7 @@
         "expected_ev": 340.41,
         "realized_revenue": 0.0,
         "opportunities": 120,
-        "allocation_weight": 0.613067
+        "allocation_weight": 0.613066
       },
       {
         "name": "BROKERAGE",
@@ -750,8 +750,8 @@
         "automation_level": 4,
         "expected_ev": 0.0,
         "realized_revenue": 0.0,
-        "opportunities": 10,
-        "allocation_weight": 0.386933
+        "opportunities": 18,
+        "allocation_weight": 0.386934
       }
     ]
   },
@@ -774,8 +774,17 @@
   ],
   "vertical_performance": [
     {
+      "vertical": "analytics",
+      "detected": 1,
+      "qualified": 0,
+      "conversions": 0,
+      "commission_mrr": 0.0,
+      "lifetime_paid": 0.0,
+      "weighted_pipeline": 0.0
+    },
+    {
       "vertical": "automation",
-      "detected": 4,
+      "detected": 5,
       "qualified": 0,
       "conversions": 0,
       "commission_mrr": 0.0,
@@ -784,6 +793,15 @@
     },
     {
       "vertical": "creator-tools",
+      "detected": 3,
+      "qualified": 0,
+      "conversions": 0,
+      "commission_mrr": 0.0,
+      "lifetime_paid": 0.0,
+      "weighted_pipeline": 0.0
+    },
+    {
+      "vertical": "developer-tooling",
       "detected": 1,
       "qualified": 0,
       "conversions": 0,
@@ -801,8 +819,26 @@
       "weighted_pipeline": 0.0
     },
     {
+      "vertical": "marketing-tools",
+      "detected": 1,
+      "qualified": 0,
+      "conversions": 0,
+      "commission_mrr": 0.0,
+      "lifetime_paid": 0.0,
+      "weighted_pipeline": 0.0
+    },
+    {
       "vertical": "productivity",
       "detected": 1,
+      "qualified": 0,
+      "conversions": 0,
+      "commission_mrr": 0.0,
+      "lifetime_paid": 0.0,
+      "weighted_pipeline": 0.0
+    },
+    {
+      "vertical": "project-management",
+      "detected": 2,
       "qualified": 0,
       "conversions": 0,
       "commission_mrr": 0.0,
@@ -840,7 +876,7 @@
   "source_performance": [
     {
       "source": "github_public_buyer_intent",
-      "detected": 10,
+      "detected": 18,
       "qualified": 0,
       "ev_per_100": 0.0,
       "conversion_rate": 0.0,
@@ -917,7 +953,7 @@
       "score": 44.01,
       "expected_value": -31.38,
       "risk_adjusted_ev": -31.38,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=44.01; ev_usd=-31.38; ev_efficiency=-2.2414; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=2.8; freshness=0.150; age_hours_at_discovery=3666.14718523",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=44.01; ev_usd=-31.38; ev_efficiency=-2.2414; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=2.8; freshness=0.150; age_hours_at_discovery=3669.49442281",
       "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/1"
     },
     {
@@ -930,7 +966,7 @@
       "score": 64.32,
       "expected_value": -93.51,
       "risk_adjusted_ev": -93.51,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=64.32; ev_usd=-93.51; ev_efficiency=-1.9084; acceptance_probability=0.180; payment_probability=0.077; competition=0.485; estimated_hours=9.8; freshness=0.150; age_hours_at_discovery=2999.77816645",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=64.32; ev_usd=-93.51; ev_efficiency=-1.9084; acceptance_probability=0.180; payment_probability=0.077; competition=0.485; estimated_hours=9.8; freshness=0.150; age_hours_at_discovery=3003.12540603",
       "url": "https://github.com/HHS/simpler-grants-gov/issues/9814"
     },
     {
@@ -943,7 +979,7 @@
       "score": 46.13,
       "expected_value": -71.0,
       "risk_adjusted_ev": -71.0,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=46.13; ev_usd=-71.00; ev_efficiency=-1.9452; acceptance_probability=0.620; payment_probability=0.020; competition=0.869; estimated_hours=7.3; freshness=0.150; age_hours_at_discovery=1473.13183027",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=46.13; ev_usd=-71.00; ev_efficiency=-1.9452; acceptance_probability=0.620; payment_probability=0.020; competition=0.869; estimated_hours=7.3; freshness=0.150; age_hours_at_discovery=1476.47907513",
       "url": "https://github.com/gitcoinco/gitcoin_co_30/issues/431"
     },
     {
@@ -956,7 +992,7 @@
       "score": 60.94,
       "expected_value": -67.38,
       "risk_adjusted_ev": -67.38,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=60.94; ev_usd=-67.38; ev_efficiency=-1.9818; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=6.8; freshness=0.150; age_hours_at_discovery=802.778726720",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=60.94; ev_usd=-67.38; ev_efficiency=-1.9818; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=6.8; freshness=0.150; age_hours_at_discovery=806.125966500",
       "url": "https://github.com/copperheadhq/copperhead/issues/66"
     },
     {
@@ -969,7 +1005,7 @@
       "score": 49.85,
       "expected_value": -62.96,
       "risk_adjusted_ev": -62.96,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=49.85; ev_usd=-62.96; ev_efficiency=-1.9372; acceptance_probability=0.180; payment_probability=0.104; competition=0.263; estimated_hours=6.5; freshness=0.150; age_hours_at_discovery=3872.27002732",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=49.85; ev_usd=-62.96; ev_efficiency=-1.9372; acceptance_probability=0.180; payment_probability=0.104; competition=0.263; estimated_hours=6.5; freshness=0.150; age_hours_at_discovery=3875.61849692",
       "url": "https://github.com/pannous/redox/issues/4"
     },
     {
@@ -982,7 +1018,7 @@
       "score": 63.77,
       "expected_value": -58.34,
       "risk_adjusted_ev": -58.34,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=63.77; ev_usd=-58.34; ev_efficiency=-1.8521; acceptance_probability=0.180; payment_probability=0.069; competition=0.572; estimated_hours=6.3; freshness=0.150; age_hours_at_discovery=46734.5652371",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=63.77; ev_usd=-58.34; ev_efficiency=-1.8521; acceptance_probability=0.180; payment_probability=0.069; competition=0.572; estimated_hours=6.3; freshness=0.150; age_hours_at_discovery=46737.9124741",
       "url": "https://github.com/kendraio/kendraio-app/issues/184"
     },
     {
@@ -995,7 +1031,7 @@
       "score": 50.09,
       "expected_value": -57.99,
       "risk_adjusted_ev": -57.99,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=50.09; ev_usd=-57.99; ev_efficiency=-1.9330; acceptance_probability=0.669; payment_probability=0.050; competition=0.852; estimated_hours=6.0; freshness=0.150; age_hours_at_discovery=63399.0187084",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=50.09; ev_usd=-57.99; ev_efficiency=-1.9330; acceptance_probability=0.669; payment_probability=0.050; competition=0.852; estimated_hours=6.0; freshness=0.150; age_hours_at_discovery=63402.3659423",
       "url": "https://github.com/Semantic-Org/Semantic-UI/issues/6821"
     },
     {
@@ -1008,7 +1044,7 @@
       "score": 46.85,
       "expected_value": -54.67,
       "risk_adjusted_ev": -54.67,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=46.85; ev_usd=-54.67; ev_efficiency=-1.9182; acceptance_probability=0.180; payment_probability=0.061; competition=0.000; estimated_hours=5.7; freshness=0.150; age_hours_at_discovery=1606.73033018",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=46.85; ev_usd=-54.67; ev_efficiency=-1.9182; acceptance_probability=0.180; payment_probability=0.061; competition=0.000; estimated_hours=5.7; freshness=0.150; age_hours_at_discovery=1610.07756276",
       "url": "https://github.com/lb1192176991-lab/zeroeye/issues/2"
     },
     {
@@ -1021,7 +1057,7 @@
       "score": 46.07,
       "expected_value": -54.39,
       "risk_adjusted_ev": -54.39,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=46.07; ev_usd=-54.39; ev_efficiency=-1.9084; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=5.7; freshness=0.150; age_hours_at_discovery=3899.03109832",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=46.07; ev_usd=-54.39; ev_efficiency=-1.9084; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=5.7; freshness=0.150; age_hours_at_discovery=3902.37833484",
       "url": "https://github.com/illbnm/homelab-stack/issues/14"
     },
     {
@@ -1034,7 +1070,7 @@
       "score": 44.31,
       "expected_value": -46.67,
       "risk_adjusted_ev": -46.67,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=44.31; ev_usd=-46.67; ev_efficiency=-1.9049; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=4.9; freshness=0.150; age_hours_at_discovery=3899.03752996",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=44.31; ev_usd=-46.67; ev_efficiency=-1.9049; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=4.9; freshness=0.150; age_hours_at_discovery=3902.38476834",
       "url": "https://github.com/illbnm/homelab-stack/issues/8"
     },
     {
@@ -1047,7 +1083,7 @@
       "score": 44.81,
       "expected_value": -46.21,
       "risk_adjusted_ev": -46.21,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=44.81; ev_usd=-46.21; ev_efficiency=-1.8861; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=4.9; freshness=0.150; age_hours_at_discovery=3899.03670058",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=44.81; ev_usd=-46.21; ev_efficiency=-1.8861; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=4.9; freshness=0.150; age_hours_at_discovery=3902.38384689",
       "url": "https://github.com/illbnm/homelab-stack/issues/9"
     },
     {
@@ -1060,7 +1096,7 @@
       "score": 43.31,
       "expected_value": -44.79,
       "risk_adjusted_ev": -44.79,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=43.31; ev_usd=-44.79; ev_efficiency=-1.9474; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=4.6; freshness=0.150; age_hours_at_discovery=3899.03310063",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=43.31; ev_usd=-44.79; ev_efficiency=-1.9474; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=4.6; freshness=0.150; age_hours_at_discovery=3902.38033644",
       "url": "https://github.com/illbnm/homelab-stack/issues/11"
     },
     {
@@ -1073,7 +1109,7 @@
       "score": 44.75,
       "expected_value": -44.39,
       "risk_adjusted_ev": -44.39,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=44.75; ev_usd=-44.39; ev_efficiency=-1.8889; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=4.7; freshness=0.150; age_hours_at_discovery=3899.03615243",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=44.75; ev_usd=-44.39; ev_efficiency=-1.8889; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=4.7; freshness=0.150; age_hours_at_discovery=3902.38338791",
       "url": "https://github.com/illbnm/homelab-stack/issues/10"
     },
     {
@@ -1086,7 +1122,7 @@
       "score": 43.7,
       "expected_value": -44.32,
       "risk_adjusted_ev": -44.32,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=43.70; ev_usd=-44.32; ev_efficiency=-1.9270; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=4.6; freshness=0.150; age_hours_at_discovery=3899.04555687",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=43.70; ev_usd=-44.32; ev_efficiency=-1.9270; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=4.6; freshness=0.150; age_hours_at_discovery=3902.39279462",
       "url": "https://github.com/illbnm/homelab-stack/issues/1"
     },
     {
@@ -1099,7 +1135,7 @@
       "score": 43.91,
       "expected_value": -44.14,
       "risk_adjusted_ev": -44.14,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=43.91; ev_usd=-44.14; ev_efficiency=-1.9191; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=4.6; freshness=0.150; age_hours_at_discovery=3899.04500493",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=43.91; ev_usd=-44.14; ev_efficiency=-1.9191; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=4.6; freshness=0.150; age_hours_at_discovery=3902.39224353",
       "url": "https://github.com/illbnm/homelab-stack/issues/2"
     },
     {
@@ -1112,7 +1148,7 @@
       "score": 44.55,
       "expected_value": -43.25,
       "risk_adjusted_ev": -43.25,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=44.55; ev_usd=-43.25; ev_efficiency=-1.9659; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=4.4; freshness=0.150; age_hours_at_discovery=3899.03165758",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=44.55; ev_usd=-43.25; ev_efficiency=-1.9659; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=4.4; freshness=0.150; age_hours_at_discovery=3902.37885505",
       "url": "https://github.com/illbnm/homelab-stack/issues/13"
     },
     {
@@ -1125,7 +1161,7 @@
       "score": 43.05,
       "expected_value": -42.6,
       "risk_adjusted_ev": -42.6,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=43.05; ev_usd=-42.60; ev_efficiency=-1.9364; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=4.4; freshness=0.150; age_hours_at_discovery=3899.04445617",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=43.05; ev_usd=-42.60; ev_efficiency=-1.9364; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=4.4; freshness=0.150; age_hours_at_discovery=3902.39169214",
       "url": "https://github.com/illbnm/homelab-stack/issues/3"
     },
     {
@@ -1138,7 +1174,7 @@
       "score": 42.86,
       "expected_value": -40.7,
       "risk_adjusted_ev": -40.7,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=42.86; ev_usd=-40.70; ev_efficiency=-1.9381; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=4.2; freshness=0.150; age_hours_at_discovery=3899.04362650",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=42.86; ev_usd=-40.70; ev_efficiency=-1.9381; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=4.2; freshness=0.150; age_hours_at_discovery=3902.39086297",
       "url": "https://github.com/illbnm/homelab-stack/issues/4"
     },
     {
@@ -1151,7 +1187,7 @@
       "score": 43.21,
       "expected_value": -40.42,
       "risk_adjusted_ev": -40.42,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=43.21; ev_usd=-40.42; ev_efficiency=-1.9248; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=4.2; freshness=0.150; age_hours_at_discovery=3899.04279677",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=43.21; ev_usd=-40.42; ev_efficiency=-1.9248; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=4.2; freshness=0.150; age_hours_at_discovery=3902.39003383",
       "url": "https://github.com/illbnm/homelab-stack/issues/5"
     },
     {
@@ -1164,7 +1200,7 @@
       "score": 42.81,
       "expected_value": -37.91,
       "risk_adjusted_ev": -37.91,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=42.81; ev_usd=-37.91; ev_efficiency=-1.9953; acceptance_probability=0.546; payment_probability=0.050; competition=0.872; estimated_hours=3.8; freshness=0.150; age_hours_at_discovery=47694.9799345",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=42.81; ev_usd=-37.91; ev_efficiency=-1.9953; acceptance_probability=0.546; payment_probability=0.050; competition=0.872; estimated_hours=3.8; freshness=0.150; age_hours_at_discovery=47698.3271840",
       "url": "https://github.com/X-CASH-official/builders-program/issues/3"
     },
     {
@@ -1177,7 +1213,7 @@
       "score": 43.2,
       "expected_value": -36.1,
       "risk_adjusted_ev": -36.1,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=43.20; ev_usd=-36.10; ev_efficiency=-2.0629; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=3.5; freshness=0.150; age_hours_at_discovery=3899.03254875",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=43.20; ev_usd=-36.10; ev_efficiency=-2.0629; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=3.5; freshness=0.150; age_hours_at_discovery=3902.37968432",
       "url": "https://github.com/illbnm/homelab-stack/issues/12"
     },
     {
@@ -1190,7 +1226,7 @@
       "score": 42.73,
       "expected_value": -35.79,
       "risk_adjusted_ev": -35.79,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=42.73; ev_usd=-35.79; ev_efficiency=-2.1053; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=3.4; freshness=0.150; age_hours_at_discovery=3899.03863743",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=42.73; ev_usd=-35.79; ev_efficiency=-2.1053; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=3.4; freshness=0.150; age_hours_at_discovery=3902.38587531",
       "url": "https://github.com/illbnm/homelab-stack/issues/7"
     },
     {
@@ -1203,7 +1239,7 @@
       "score": 43.4,
       "expected_value": -34.95,
       "risk_adjusted_ev": -34.95,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=43.40; ev_usd=-34.95; ev_efficiency=-2.0559; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=3.4; freshness=0.150; age_hours_at_discovery=3899.03946708",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=43.40; ev_usd=-34.95; ev_efficiency=-2.0559; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=3.4; freshness=0.150; age_hours_at_discovery=3902.38670462",
       "url": "https://github.com/illbnm/homelab-stack/issues/6"
     },
     {
@@ -1216,7 +1252,7 @@
       "score": 48.17,
       "expected_value": -34.61,
       "risk_adjusted_ev": -34.61,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=48.17; ev_usd=-34.61; ev_efficiency=-2.3073; acceptance_probability=0.551; payment_probability=0.020; competition=0.691; estimated_hours=3.0; freshness=0.150; age_hours_at_discovery=863.088963509",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=48.17; ev_usd=-34.61; ev_efficiency=-2.3073; acceptance_probability=0.551; payment_probability=0.020; competition=0.691; estimated_hours=3.0; freshness=0.150; age_hours_at_discovery=866.436198798",
       "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/622"
     },
     {
@@ -1229,7 +1265,7 @@
       "score": 39.86,
       "expected_value": -33.91,
       "risk_adjusted_ev": -33.91,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=39.86; ev_usd=-33.91; ev_efficiency=-2.4221; acceptance_probability=0.453; payment_probability=0.050; competition=0.872; estimated_hours=2.8; freshness=0.150; age_hours_at_discovery=46531.6382610",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=39.86; ev_usd=-33.91; ev_efficiency=-2.4221; acceptance_probability=0.453; payment_probability=0.050; competition=0.872; estimated_hours=2.8; freshness=0.150; age_hours_at_discovery=46534.9855101",
       "url": "https://github.com/MysteryBlokHed/phasjournal/issues/1"
     },
     {
@@ -1242,7 +1278,7 @@
       "score": 63.16,
       "expected_value": -32.79,
       "risk_adjusted_ev": -32.79,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=63.16; ev_usd=-32.79; ev_efficiency=-1.7258; acceptance_probability=0.180; payment_probability=0.127; competition=0.000; estimated_hours=3.8; freshness=0.150; age_hours_at_discovery=1300.55956686",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=63.16; ev_usd=-32.79; ev_efficiency=-1.7258; acceptance_probability=0.180; payment_probability=0.127; competition=0.000; estimated_hours=3.8; freshness=0.150; age_hours_at_discovery=1303.90680446",
       "url": "https://github.com/Nexussyn/ai-growth-engine/issues/3"
     },
     {
@@ -1255,7 +1291,7 @@
       "score": 43.76,
       "expected_value": -32.5,
       "risk_adjusted_ev": -32.5,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=43.76; ev_usd=-32.50; ev_efficiency=-2.2414; acceptance_probability=0.525; payment_probability=0.020; competition=0.872; estimated_hours=2.9; freshness=0.150; age_hours_at_discovery=1633.91868155",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=43.76; ev_usd=-32.50; ev_efficiency=-2.2414; acceptance_probability=0.525; payment_probability=0.020; competition=0.872; estimated_hours=2.9; freshness=0.150; age_hours_at_discovery=1637.26591620",
       "url": "https://github.com/GiorgiBurjaliani/webfinalproject/issues/13"
     },
     {
@@ -1268,7 +1304,7 @@
       "score": 54.38,
       "expected_value": -32.38,
       "risk_adjusted_ev": -32.38,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=54.38; ev_usd=-32.38; ev_efficiency=-2.1587; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=3.0; freshness=0.150; age_hours_at_discovery=2029.22694059",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=54.38; ev_usd=-32.38; ev_efficiency=-2.1587; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=3.0; freshness=0.150; age_hours_at_discovery=2032.57417436",
       "url": "https://github.com/xevrion-v2/agent-playground/issues/2"
     },
     {
@@ -1281,7 +1317,7 @@
       "score": 45.68,
       "expected_value": -31.01,
       "risk_adjusted_ev": -31.01,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=45.68; ev_usd=-31.01; ev_efficiency=-2.0006; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=3.1; freshness=0.150; age_hours_at_discovery=3666.14496893",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=45.68; ev_usd=-31.01; ev_efficiency=-2.0006; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=3.1; freshness=0.150; age_hours_at_discovery=3669.49220679",
       "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/5"
     },
     {
@@ -1294,7 +1330,7 @@
       "score": 42.72,
       "expected_value": -30.75,
       "risk_adjusted_ev": -30.75,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=42.72; ev_usd=-30.75; ev_efficiency=-2.1964; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=2.8; freshness=0.150; age_hours_at_discovery=3666.14607630",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=42.72; ev_usd=-30.75; ev_efficiency=-2.1964; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=2.8; freshness=0.150; age_hours_at_discovery=3669.49330349",
       "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/3"
     },
     {
@@ -1307,7 +1343,7 @@
       "score": 46.04,
       "expected_value": -30.06,
       "risk_adjusted_ev": -30.06,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=46.04; ev_usd=-30.06; ev_efficiency=-2.3123; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=2.6; freshness=0.150; age_hours_at_discovery=3666.14663928",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=46.04; ev_usd=-30.06; ev_efficiency=-2.3123; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=2.6; freshness=0.150; age_hours_at_discovery=3669.49387774",
       "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/2"
     },
     {
@@ -1320,7 +1356,7 @@
       "score": 45.15,
       "expected_value": -29.13,
       "risk_adjusted_ev": -29.13,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=45.15; ev_usd=-29.13; ev_efficiency=-2.2408; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=2.6; freshness=0.150; age_hours_at_discovery=3666.14553196",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=45.15; ev_usd=-29.13; ev_efficiency=-2.2408; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=2.6; freshness=0.150; age_hours_at_discovery=3669.49277088",
       "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4"
     },
     {
@@ -1333,7 +1369,7 @@
       "score": 37.0,
       "expected_value": -28.88,
       "risk_adjusted_ev": -28.88,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=37.00; ev_usd=-28.88; ev_efficiency=-3.2089; acceptance_probability=0.456; payment_probability=0.042; competition=0.820; estimated_hours=1.8; freshness=0.150; age_hours_at_discovery=23722.7778586",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=37.00; ev_usd=-28.88; ev_efficiency=-3.2089; acceptance_probability=0.456; payment_probability=0.042; competition=0.820; estimated_hours=1.8; freshness=0.150; age_hours_at_discovery=23726.1250945",
       "url": "https://github.com/TypeStrong/discussions/issues/7"
     },
     {
@@ -1346,7 +1382,7 @@
       "score": 36.93,
       "expected_value": -27.5,
       "risk_adjusted_ev": -27.5,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=36.93; ev_usd=-27.50; ev_efficiency=-3.6667; acceptance_probability=0.442; payment_probability=0.020; competition=0.859; estimated_hours=1.5; freshness=0.150; age_hours_at_discovery=51121.3970341",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=36.93; ev_usd=-27.50; ev_efficiency=-3.6667; acceptance_probability=0.442; payment_probability=0.020; competition=0.859; estimated_hours=1.5; freshness=0.150; age_hours_at_discovery=51124.7442716",
       "url": "https://github.com/SogurCurrency/Gitcoin-hackathon/issues/6"
     },
     {
@@ -1359,7 +1395,7 @@
       "score": 31.67,
       "expected_value": -27.45,
       "risk_adjusted_ev": -27.45,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=31.67; ev_usd=-27.45; ev_efficiency=-3.6600; acceptance_probability=0.180; payment_probability=0.034; competition=0.480; estimated_hours=1.5; freshness=0.150; age_hours_at_discovery=4611.60157380",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=31.67; ev_usd=-27.45; ev_efficiency=-3.6600; acceptance_probability=0.180; payment_probability=0.034; competition=0.480; estimated_hours=1.5; freshness=0.150; age_hours_at_discovery=4614.94881854",
       "url": "https://github.com/Andreafr-123/support-escalations/issues/42"
     },
     {
@@ -1372,7 +1408,7 @@
       "score": 45.73,
       "expected_value": -27.44,
       "risk_adjusted_ev": -27.44,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=45.73; ev_usd=-27.44; ev_efficiency=-1.6141; acceptance_probability=0.474; payment_probability=0.058; competition=0.872; estimated_hours=3.4; freshness=0.150; age_hours_at_discovery=10019.1510228",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=45.73; ev_usd=-27.44; ev_efficiency=-1.6141; acceptance_probability=0.474; payment_probability=0.058; competition=0.872; estimated_hours=3.4; freshness=0.150; age_hours_at_discovery=10022.4982706",
       "url": "https://github.com/gbabaisaac/mergefund-bounty-challenges/issues/6"
     },
     {
@@ -1385,7 +1421,7 @@
       "score": 41.02,
       "expected_value": -22.02,
       "risk_adjusted_ev": -22.02,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=41.02; ev_usd=-22.02; ev_efficiency=-1.8350; acceptance_probability=0.499; payment_probability=0.020; competition=0.872; estimated_hours=2.4; freshness=0.150; age_hours_at_discovery=787.704030116",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=41.02; ev_usd=-22.02; ev_efficiency=-1.8350; acceptance_probability=0.499; payment_probability=0.020; competition=0.872; estimated_hours=2.4; freshness=0.150; age_hours_at_discovery=791.051272973",
       "url": "https://github.com/surf-sound/lifestealz/issues/10"
     },
     {
@@ -1398,7 +1434,7 @@
       "score": 48.09,
       "expected_value": -13.48,
       "risk_adjusted_ev": -13.48,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=48.09; ev_usd=-13.48; ev_efficiency=-0.5617; acceptance_probability=0.541; payment_probability=0.058; competition=0.872; estimated_hours=4.8; freshness=0.150; age_hours_at_discovery=19195.1793640",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=48.09; ev_usd=-13.48; ev_efficiency=-0.5617; acceptance_probability=0.541; payment_probability=0.058; competition=0.872; estimated_hours=4.8; freshness=0.150; age_hours_at_discovery=19198.5266126",
       "url": "https://github.com/vscodenpa/testissues/issues/46832"
     },
     {
@@ -1411,7 +1447,7 @@
       "score": 42.29,
       "expected_value": 4221.0,
       "risk_adjusted_ev": 4221.0,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=42.29; ev_usd=4221.00; ev_efficiency=263.8125; acceptance_probability=0.473; payment_probability=0.020; competition=0.869; estimated_hours=3.2; freshness=0.150; age_hours_at_discovery=56585.04730",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=42.29; ev_usd=4221.00; ev_efficiency=263.8125; acceptance_probability=0.473; payment_probability=0.020; competition=0.869; estimated_hours=3.2; freshness=0.150; age_hours_at_discovery=56588.39454",
       "url": "https://github.com/vporton/algebraic-general-topology/issues/2"
     },
     {
@@ -1421,10 +1457,10 @@
       "reward": 100.0,
       "currency": "USD",
       "status": "ARCHIVED",
-      "score": 48.45,
-      "expected_value": -116.74,
-      "risk_adjusted_ev": -116.74,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=48.45; ev_usd=-116.74; ev_efficiency=-1.9956; acceptance_probability=0.771; payment_probability=0.034; competition=0.903; estimated_hours=11.7; freshness=0.400; age_hours_at_discovery=481.8067970",
+      "score": 48.38,
+      "expected_value": -117.74,
+      "risk_adjusted_ev": -117.74,
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=48.38; ev_usd=-117.74; ev_efficiency=-1.9956; acceptance_probability=0.771; payment_probability=0.034; competition=0.903; estimated_hours=11.8; freshness=0.400; age_hours_at_discovery=485.1540388",
       "url": "https://github.com/bipolarizeinc/polar-os/issues/13"
     },
     {
@@ -1437,7 +1473,7 @@
       "score": 58.04,
       "expected_value": -81.97,
       "risk_adjusted_ev": -81.97,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=58.04; ev_usd=-81.97; ev_efficiency=-1.9993; acceptance_probability=0.802; payment_probability=0.058; competition=0.910; estimated_hours=8.2; freshness=0.400; age_hours_at_discovery=696.869876379",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=58.04; ev_usd=-81.97; ev_efficiency=-1.9993; acceptance_probability=0.802; payment_probability=0.058; competition=0.910; estimated_hours=8.2; freshness=0.400; age_hours_at_discovery=700.217115869",
       "url": "https://github.com/GoodDollar/GoodWidget/issues/127"
     },
     {
@@ -1450,7 +1486,7 @@
       "score": 57.99,
       "expected_value": -37.42,
       "risk_adjusted_ev": -37.42,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=57.99; ev_usd=-37.42; ev_efficiency=-2.1383; acceptance_probability=0.788; payment_probability=0.050; competition=0.910; estimated_hours=3.5; freshness=0.400; age_hours_at_discovery=431.039026446",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=57.99; ev_usd=-37.42; ev_efficiency=-2.1383; acceptance_probability=0.788; payment_probability=0.050; competition=0.910; estimated_hours=3.5; freshness=0.400; age_hours_at_discovery=434.386269012",
       "url": "https://github.com/coder/balatrobot/issues/231"
     },
     {
@@ -1463,7 +1499,7 @@
       "score": 44.55,
       "expected_value": -37.0,
       "risk_adjusted_ev": -37.0,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=44.55; ev_usd=-37.00; ev_efficiency=-2.1765; acceptance_probability=0.603; payment_probability=0.020; competition=0.906; estimated_hours=3.4; freshness=0.400; age_hours_at_discovery=309.635892498",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=44.55; ev_usd=-37.00; ev_efficiency=-2.1765; acceptance_probability=0.603; payment_probability=0.020; competition=0.906; estimated_hours=3.4; freshness=0.400; age_hours_at_discovery=312.983126200",
       "url": "https://github.com/8x8org/.github/issues/35"
     },
     {
@@ -1476,7 +1512,7 @@
       "score": 56.11,
       "expected_value": -36.43,
       "risk_adjusted_ev": -36.43,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=56.11; ev_usd=-36.43; ev_efficiency=-2.2079; acceptance_probability=0.744; payment_probability=0.050; competition=0.910; estimated_hours=3.3; freshness=0.400; age_hours_at_discovery=431.029856232",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=56.11; ev_usd=-36.43; ev_efficiency=-2.2079; acceptance_probability=0.744; payment_probability=0.050; competition=0.910; estimated_hours=3.3; freshness=0.400; age_hours_at_discovery=434.377098401",
       "url": "https://github.com/coder/balatrollm/issues/85"
     },
     {
@@ -1489,7 +1525,7 @@
       "score": 55.92,
       "expected_value": -30.21,
       "risk_adjusted_ev": -30.21,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=55.92; ev_usd=-30.21; ev_efficiency=-1.7263; acceptance_probability=0.620; payment_probability=0.060; competition=0.546; estimated_hours=3.5; freshness=0.400; age_hours_at_discovery=707.771255895",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=55.92; ev_usd=-30.21; ev_efficiency=-1.7263; acceptance_probability=0.620; payment_probability=0.060; competition=0.546; estimated_hours=3.5; freshness=0.400; age_hours_at_discovery=711.118499103",
       "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/736"
     },
     {
@@ -1502,8 +1538,21 @@
       "score": 62.62,
       "expected_value": -75.01,
       "risk_adjusted_ev": -75.01,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=62.62; ev_usd=-75.01; ev_efficiency=-1.7860; acceptance_probability=0.180; payment_probability=0.069; competition=0.408; estimated_hours=8.4; freshness=0.600; age_hours_at_discovery=95.3302612077",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=62.62; ev_usd=-75.01; ev_efficiency=-1.7860; acceptance_probability=0.180; payment_probability=0.069; competition=0.408; estimated_hours=8.4; freshness=0.600; age_hours_at_discovery=98.6774972558",
       "url": "https://github.com/tenstorrent/tt-metal/issues/54055"
+    },
+    {
+      "title": "research-plan rubric: the N/A clause the judge never applies, and no dimension that can fail on an omission",
+      "repository": "PioneerAIAcademy/cowork-genealogy",
+      "source": "github_public_rewards",
+      "reward": 6.31,
+      "currency": "USD",
+      "status": "ARCHIVED",
+      "score": 56.39,
+      "expected_value": -66.95,
+      "risk_adjusted_ev": -66.95,
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=56.39; ev_usd=-66.95; ev_efficiency=-1.9985; acceptance_probability=0.830; payment_probability=0.042; competition=0.967; estimated_hours=6.7; freshness=0.780; age_hours_at_discovery=24.1966103011",
+      "url": "https://github.com/PioneerAIAcademy/cowork-genealogy/issues/1913"
     },
     {
       "title": "[Bounty] [Bounty $2000] CosyVoice2 (HiFT Vocoder + iSTFT + Streaming Pipeline) bring up u",
@@ -1515,21 +1564,34 @@
       "score": 50.59,
       "expected_value": -32.48,
       "risk_adjusted_ev": -32.48,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=50.59; ev_usd=-32.48; ev_efficiency=-2.1653; acceptance_probability=0.180; payment_probability=0.020; competition=0.095; estimated_hours=3.0; freshness=0.780; age_hours_at_discovery=51.2751980388",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=50.59; ev_usd=-32.48; ev_efficiency=-2.1653; acceptance_probability=0.180; payment_probability=0.020; competition=0.095; estimated_hours=3.0; freshness=0.780; age_hours_at_discovery=54.6224159561",
       "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/897"
     },
     {
-      "title": "research-plan rubric: the N/A clause the judge never applies, and no dimension that can fail on an omission",
-      "repository": "PioneerAIAcademy/cowork-genealogy",
+      "title": "bounty: $25 USDC — add-only docs/LIVE_LEDGER.md",
+      "repository": "kwizzlesurp10-ctrl/x402-mcp",
       "source": "github_public_rewards",
-      "reward": 6.31,
+      "reward": 25.0,
       "currency": "USD",
       "status": "ARCHIVED",
-      "score": 56.56,
-      "expected_value": -66.95,
-      "risk_adjusted_ev": -66.95,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=56.56; ev_usd=-66.95; ev_efficiency=-1.9985; acceptance_probability=0.830; payment_probability=0.042; competition=0.988; estimated_hours=6.7; freshness=0.920; age_hours_at_discovery=20.8493890911",
-      "url": "https://github.com/PioneerAIAcademy/cowork-genealogy/issues/1913"
+      "score": 53.49,
+      "expected_value": -42.82,
+      "risk_adjusted_ev": -42.82,
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=53.49; ev_usd=-42.82; ev_efficiency=-1.8221; acceptance_probability=0.180; payment_probability=0.100; competition=0.223; estimated_hours=4.7; freshness=0.920; age_hours_at_discovery=7.31103778777",
+      "url": "https://github.com/kwizzlesurp10-ctrl/x402-mcp/issues/496"
+    },
+    {
+      "title": "bounty protocol: public spec → add-only file → USDC to payTo → paste tx hash",
+      "repository": "kwizzlesurp10-ctrl/x402-mcp",
+      "source": "github_public_rewards",
+      "reward": 25.0,
+      "currency": "USD",
+      "status": "ARCHIVED",
+      "score": 55.42,
+      "expected_value": -34.73,
+      "risk_adjusted_ev": -34.73,
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=55.42; ev_usd=-34.73; ev_efficiency=-1.8279; acceptance_probability=0.180; payment_probability=0.108; competition=0.227; estimated_hours=3.8; freshness=0.920; age_hours_at_discovery=7.31715453749",
+      "url": "https://github.com/kwizzlesurp10-ctrl/x402-mcp/issues/493"
     },
     {
       "title": "Implement 'Automated \"Tax-Exempt\" 1099-MISC Contractor Generator'",
@@ -1541,34 +1603,8 @@
       "score": 57.69,
       "expected_value": -52.41,
       "risk_adjusted_ev": -52.41,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=57.69; ev_usd=-52.41; ev_efficiency=-1.7766; acceptance_probability=0.180; payment_probability=0.058; competition=0.442; estimated_hours=5.9; freshness=1.000; age_hours_at_discovery=2.18492549527",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=57.69; ev_usd=-52.41; ev_efficiency=-1.7766; acceptance_probability=0.180; payment_probability=0.058; competition=0.442; estimated_hours=5.9; freshness=1.000; age_hours_at_discovery=5.53214390194",
       "url": "https://github.com/krushit1307/CampusConnect/issues/4730"
-    },
-    {
-      "title": "bounty: $25 USDC — add-only docs/LIVE_LEDGER.md",
-      "repository": "kwizzlesurp10-ctrl/x402-mcp",
-      "source": "github_public_rewards",
-      "reward": 25.0,
-      "currency": "USD",
-      "status": "ARCHIVED",
-      "score": 53.51,
-      "expected_value": -42.82,
-      "risk_adjusted_ev": -42.82,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=53.51; ev_usd=-42.82; ev_efficiency=-1.8221; acceptance_probability=0.180; payment_probability=0.100; competition=0.226; estimated_hours=4.7; freshness=1.000; age_hours_at_discovery=3.96381887527",
-      "url": "https://github.com/kwizzlesurp10-ctrl/x402-mcp/issues/496"
-    },
-    {
-      "title": "bounty protocol: public spec → add-only file → USDC to payTo → paste tx hash",
-      "repository": "kwizzlesurp10-ctrl/x402-mcp",
-      "source": "github_public_rewards",
-      "reward": 25.0,
-      "currency": "USD",
-      "status": "ARCHIVED",
-      "score": 55.45,
-      "expected_value": -34.73,
-      "risk_adjusted_ev": -34.73,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=55.45; ev_usd=-34.73; ev_efficiency=-1.8279; acceptance_probability=0.180; payment_probability=0.108; competition=0.230; estimated_hours=3.8; freshness=1.000; age_hours_at_discovery=3.96993417388",
-      "url": "https://github.com/kwizzlesurp10-ctrl/x402-mcp/issues/493"
     },
     {
       "title": "Add inline comments on commits",
@@ -2039,19 +2075,6 @@
       "url": "https://github.com/PioneerAIAcademy/cowork-genealogy/issues/1652"
     },
     {
-      "title": "historical-context: two prose corrections for one paid run — the guardianship-to-prior-marriage inference, and a rule against fabricating a tool-error excuse",
-      "repository": "PioneerAIAcademy/cowork-genealogy",
-      "source": "github_public_rewards",
-      "reward": 8.0,
-      "currency": "USD",
-      "status": "ARCHIVED",
-      "score": 0.0,
-      "expected_value": 0.0,
-      "risk_adjusted_ev": 0.0,
-      "reason": "Not a direct monetary bounty: amount_is_complaint_or_cost",
-      "url": "https://github.com/PioneerAIAcademy/cowork-genealogy/issues/1710"
-    },
-    {
       "title": "[$250] Paid report remains under the Approved filter in New Expensify and only shows “View,” while Classic still allows a workspace admin to mark it as paid",
       "repository": "Expensify/App",
       "source": "github_public_rewards",
@@ -2076,6 +2099,19 @@
       "risk_adjusted_ev": 0.0,
       "reason": "Not a direct monetary bounty: amount_is_complaint_or_cost, likely_reference_not_offer",
       "url": "https://github.com/PioneerAIAcademy/cowork-genealogy/issues/1853"
+    },
+    {
+      "title": "historical-context: two prose corrections for one paid run — the guardianship-to-prior-marriage inference, and a rule against fabricating a tool-error excuse",
+      "repository": "PioneerAIAcademy/cowork-genealogy",
+      "source": "github_public_rewards",
+      "reward": 8.0,
+      "currency": "USD",
+      "status": "ARCHIVED",
+      "score": 0.0,
+      "expected_value": 0.0,
+      "risk_adjusted_ev": 0.0,
+      "reason": "Not a direct monetary bounty: amount_is_complaint_or_cost",
+      "url": "https://github.com/PioneerAIAcademy/cowork-genealogy/issues/1710"
     },
     {
       "title": "summary of auto uploaded issues",
@@ -2214,7 +2250,7 @@
       "enabled": false,
       "status": "MONITOR_ONLY_POLICY_INCOMPLETE",
       "last_verified": "2026-08-19",
-      "items_found": 193,
+      "items_found": 289,
       "failures": 0
     },
     {
@@ -2222,7 +2258,7 @@
       "enabled": false,
       "status": "MONITOR_ONLY_POLICY_INCOMPLETE",
       "last_verified": "2026-08-25",
-      "items_found": 32,
+      "items_found": 48,
       "failures": 0
     },
     {
@@ -2230,7 +2266,7 @@
       "enabled": false,
       "status": "POLICY_BLOCKED",
       "last_verified": "2026-08-19",
-      "items_found": 112,
+      "items_found": 168,
       "failures": 0
     },
     {
@@ -2238,7 +2274,7 @@
       "enabled": false,
       "status": "LEAD_ONLY",
       "last_verified": "2026-08-19",
-      "items_found": 1688,
+      "items_found": 2545,
       "failures": 0
     }
   ]
