@@ -1,14 +1,14 @@
 {
   "schema": "bca-public-dashboard-v1",
-  "generated_at": "2026-08-28T04:15:23.285272+00:00",
+  "generated_at": "2026-08-28T08:28:21.719401+00:00",
   "status": "RUNNING",
   "data_freshness": "CURRENT",
   "kpis": {
-    "opportunities_scanned": 161,
-    "items_observed": 8261,
-    "scan_runs": 283,
+    "opportunities_scanned": 166,
+    "items_observed": 8405,
+    "scan_runs": 287,
     "agent_count": 51,
-    "fresh_opportunities": 0,
+    "fresh_opportunities": 3,
     "technically_ready": 0,
     "selected": 0,
     "queued": 0,
@@ -616,14 +616,14 @@
     "paid": 0.0
   },
   "rrae_pipeline": {
-    "detected": 35,
+    "detected": 37,
     "qualified": 0,
     "matched": 0,
     "executed": 0,
     "converted": 0,
     "paid": 0,
     "owner_actions_required": 7,
-    "rejected": 35
+    "rejected": 37
   },
   "revenue_by_engine": {
     "rrae": 0.0,
@@ -642,15 +642,15 @@
   },
   "universal_revenue": {
     "status": "ACTIVE",
-    "decisions_this_cycle": 196,
+    "decisions_this_cycle": 203,
     "routed": 0,
     "needs_analysis": 0,
     "needs_verification": 0,
-    "rejected": 196,
+    "rejected": 203,
     "unknown_models": 0,
     "strategies_enabled": 11,
-    "radar_raw_signals": 196,
-    "radar_normalized_signals": 196,
+    "radar_raw_signals": 203,
+    "radar_normalized_signals": 203,
     "money_verified": 8,
     "portfolio_status": "WAITING_FOR_VERIFIED_ECONOMICS",
     "primary_strategy": "N/A",
@@ -723,7 +723,7 @@
     },
     {
       "vertical": "automation",
-      "detected": 13,
+      "detected": 14,
       "qualified": 0,
       "conversions": 0,
       "commission_mrr": 0.0,
@@ -742,6 +742,15 @@
     {
       "vertical": "developer-tooling",
       "detected": 2,
+      "qualified": 0,
+      "conversions": 0,
+      "commission_mrr": 0.0,
+      "lifetime_paid": 0.0,
+      "weighted_pipeline": 0.0
+    },
+    {
+      "vertical": "ecommerce-operations",
+      "detected": 1,
       "qualified": 0,
       "conversions": 0,
       "commission_mrr": 0.0,
@@ -851,7 +860,7 @@
   "source_performance": [
     {
       "source": "github_public_buyer_intent",
-      "detected": 35,
+      "detected": 37,
       "qualified": 0,
       "ev_per_100": 0.0,
       "conversion_rate": 0.0,
@@ -932,6 +941,19 @@
       "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/1"
     },
     {
+      "title": "[BOUNTY $280] Observability — Prometheus + Grafana + Loki + Alerting",
+      "repository": "illbnm/homelab-stack",
+      "source": "github_public_rewards",
+      "reward": 280.0,
+      "currency": "USD",
+      "status": "ARCHIVED",
+      "score": 44.75,
+      "expected_value": -44.39,
+      "risk_adjusted_ev": -44.39,
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=44.75; ev_usd=-44.39; ev_efficiency=-1.8889; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=4.7; freshness=0.150; age_hours_at_discovery=3936.42187392",
+      "url": "https://github.com/illbnm/homelab-stack/issues/10"
+    },
+    {
       "title": "Subgroups in Gitea",
       "repository": "go-gitea/gitea",
       "source": "algora_public",
@@ -943,6 +965,58 @@
       "risk_adjusted_ev": -59.44,
       "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=55.59; ev_usd=-59.44; ev_efficiency=-1.6983; acceptance_probability=0.609; payment_probability=0.255; competition=0.381; estimated_hours=7.0; freshness=0.250; age_hours_at_discovery=None; policy_",
       "url": "https://algora.io/go-gitea/bounties/community?fund=go-gitea%2Fgitea%231872"
+    },
+    {
+      "title": "[Bounty $1500] logaddexp / logaddexp2: overflow-safe reformulation",
+      "repository": "tenstorrent/tt-metal",
+      "source": "github_public_rewards",
+      "reward": 1500.0,
+      "currency": "USD",
+      "status": "ARCHIVED",
+      "score": 59.15,
+      "expected_value": -68.03,
+      "risk_adjusted_ev": -68.03,
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=59.15; ev_usd=-68.03; ev_efficiency=-1.6198; acceptance_probability=0.180; payment_probability=0.069; competition=0.180; estimated_hours=8.4; freshness=0.400; age_hours_at_discovery=578.842147022",
+      "url": "https://github.com/tenstorrent/tt-metal/issues/52037"
+    },
+    {
+      "title": "Frantic bounty #120: Add a valuable startup offer to Sourcey",
+      "repository": "auscaster/frantic-board",
+      "source": "github_public_rewards",
+      "reward": 1.0,
+      "currency": "USD",
+      "status": "ARCHIVED",
+      "score": 45.51,
+      "expected_value": -31.99,
+      "risk_adjusted_ev": -31.99,
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=45.51; ev_usd=-31.99; ev_efficiency=-2.2850; acceptance_probability=0.180; payment_probability=0.061; competition=0.045; estimated_hours=2.8; freshness=0.400; age_hours_at_discovery=618.173267241",
+      "url": "https://github.com/auscaster/frantic-board/issues/330"
+    },
+    {
+      "title": "Frantic bounty #130: Find live Reddit threads asking about startup credits or agent readiness and draft sourced answers for Sourcey's founder to post",
+      "repository": "auscaster/frantic-board",
+      "source": "github_public_rewards",
+      "reward": 3.0,
+      "currency": "USD",
+      "status": "ARCHIVED",
+      "score": 51.77,
+      "expected_value": -31.94,
+      "risk_adjusted_ev": -31.94,
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=51.77; ev_usd=-31.94; ev_efficiency=-2.2814; acceptance_probability=0.590; payment_probability=0.061; competition=0.830; estimated_hours=2.8; freshness=0.920; age_hours_at_discovery=23.2200439802",
+      "url": "https://github.com/auscaster/frantic-board/issues/391"
+    },
+    {
+      "title": "[Bounty] Fail-closed Victory Audit on planted auth_bypass",
+      "repository": "s6pa1rta3n-lab/universal_bounty_fleet",
+      "source": "github_public_rewards",
+      "reward": 1200.0,
+      "currency": "USD",
+      "status": "ARCHIVED",
+      "score": 58.33,
+      "expected_value": -19.53,
+      "risk_adjusted_ev": -19.53,
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=58.33; ev_usd=-19.53; ev_efficiency=-1.1836; acceptance_probability=0.180; payment_probability=0.077; competition=0.121; estimated_hours=3.3; freshness=0.920; age_hours_at_discovery=6.0489287625;",
+      "url": "https://github.com/s6pa1rta3n-lab/universal_bounty_fleet/issues/1"
     },
     {
       "title": "Multi-Processor Mac",
@@ -1047,136 +1121,6 @@
       "risk_adjusted_ev": -54.67,
       "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=46.85; ev_usd=-54.67; ev_efficiency=-1.9182; acceptance_probability=0.180; payment_probability=0.061; competition=0.000; estimated_hours=5.7; freshness=0.150; age_hours_at_discovery=1639.31510709",
       "url": "https://github.com/lb1192176991-lab/zeroeye/issues/2"
-    },
-    {
-      "title": "[BOUNTY $300] SSO — Authentik 统一身份认证",
-      "repository": "illbnm/homelab-stack",
-      "source": "github_public_rewards",
-      "reward": 300.0,
-      "currency": "USD",
-      "status": "ARCHIVED",
-      "score": 44.81,
-      "expected_value": -46.21,
-      "risk_adjusted_ev": -46.21,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=44.81; ev_usd=-46.21; ev_efficiency=-1.8861; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=4.9; freshness=0.150; age_hours_at_discovery=3931.62149357",
-      "url": "https://github.com/illbnm/homelab-stack/issues/9"
-    },
-    {
-      "title": "[Bounty] [Bounty] Seed a paid MCP child bounty",
-      "repository": "zhangjiayang6835-cyber/bounty-plaza",
-      "source": "github_public_rewards",
-      "reward": 90.0,
-      "currency": "USD",
-      "status": "ARCHIVED",
-      "score": 0.0,
-      "expected_value": 0.0,
-      "risk_adjusted_ev": 0.0,
-      "reason": "Not a direct monetary bounty: mirror_or_internal_coin_listing",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/818"
-    },
-    {
-      "title": "[BOUNTY $150] Backup & DR — 自动备份 + 灾难恢复",
-      "repository": "illbnm/homelab-stack",
-      "source": "github_public_rewards",
-      "reward": 150.0,
-      "currency": "USD",
-      "status": "ARCHIVED",
-      "score": 43.2,
-      "expected_value": -36.1,
-      "risk_adjusted_ev": -36.1,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=43.20; ev_usd=-36.10; ev_efficiency=-2.0629; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=3.5; freshness=0.150; age_hours_at_discovery=3931.61732206",
-      "url": "https://github.com/illbnm/homelab-stack/issues/12"
-    },
-    {
-      "title": "[Bounty] [BOUNTY] [$337] Mapping bounty",
-      "repository": "zhangjiayang6835-cyber/bounty-plaza",
-      "source": "github_public_rewards",
-      "reward": 337.0,
-      "currency": "USD",
-      "status": "ARCHIVED",
-      "score": 49.73,
-      "expected_value": 0.0,
-      "risk_adjusted_ev": 0.0,
-      "reason": "Not a direct monetary bounty: mirror_or_internal_coin_listing",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/626"
-    },
-    {
-      "title": "[AGENT-TASK] Mobile-first landing page with wallet deep-link — +15% conversion",
-      "repository": "Nexussyn/ai-growth-engine",
-      "source": "github_public_rewards",
-      "reward": 10.0,
-      "currency": "USD",
-      "status": "ARCHIVED",
-      "score": 61.27,
-      "expected_value": -33.29,
-      "risk_adjusted_ev": -33.29,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=61.27; ev_usd=-33.29; ev_efficiency=-1.7072; acceptance_probability=0.180; payment_probability=0.127; competition=0.000; estimated_hours=3.9; freshness=0.150; age_hours_at_discovery=1333.11398516",
-      "url": "https://github.com/Nexussyn/ai-growth-engine/issues/4"
-    },
-    {
-      "title": "[BOUNTY $100] HOOK: Pre-tool-use hook that blocks destructive bash commands",
-      "repository": "claude-builders-bounty/claude-builders-bounty",
-      "source": "github_public_rewards",
-      "reward": 100.0,
-      "currency": "USD",
-      "status": "ARCHIVED",
-      "score": 42.72,
-      "expected_value": -30.75,
-      "risk_adjusted_ev": -30.75,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=42.72; ev_usd=-30.75; ev_efficiency=-2.1964; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=2.8; freshness=0.150; age_hours_at_discovery=3698.73092774",
-      "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/3"
-    },
-    {
-      "title": "[BOUNTY $280] Observability — Prometheus + Grafana + Loki + Alerting",
-      "repository": "illbnm/homelab-stack",
-      "source": "github_public_rewards",
-      "reward": 280.0,
-      "currency": "USD",
-      "status": "ARCHIVED",
-      "score": 44.75,
-      "expected_value": -44.39,
-      "risk_adjusted_ev": -44.39,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=44.75; ev_usd=-44.39; ev_efficiency=-1.8889; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=4.7; freshness=0.150; age_hours_at_discovery=3931.62092587",
-      "url": "https://github.com/illbnm/homelab-stack/issues/10"
-    },
-    {
-      "title": "[BOUNTY $200] Testing — 自动化测试套件",
-      "repository": "illbnm/homelab-stack",
-      "source": "github_public_rewards",
-      "reward": 280.0,
-      "currency": "USD",
-      "status": "ARCHIVED",
-      "score": 46.07,
-      "expected_value": -54.39,
-      "risk_adjusted_ev": -54.39,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=46.07; ev_usd=-54.39; ev_efficiency=-1.9084; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=5.7; freshness=0.150; age_hours_at_discovery=3931.61592395",
-      "url": "https://github.com/illbnm/homelab-stack/issues/14"
-    },
-    {
-      "title": "[BOUNTY $130] Database Layer — PostgreSQL + Redis + MariaDB 共享实例",
-      "repository": "illbnm/homelab-stack",
-      "source": "github_public_rewards",
-      "reward": 130.0,
-      "currency": "USD",
-      "status": "ARCHIVED",
-      "score": 43.31,
-      "expected_value": -44.79,
-      "risk_adjusted_ev": -44.79,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=43.31; ev_usd=-44.79; ev_efficiency=-1.9474; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=4.6; freshness=0.150; age_hours_at_discovery=3931.61786660",
-      "url": "https://github.com/illbnm/homelab-stack/issues/11"
-    },
-    {
-      "title": "[BOUNTY $200] WORKFLOW: n8n + Claude Code — automated weekly dev summary",
-      "repository": "claude-builders-bounty/claude-builders-bounty",
-      "source": "github_public_rewards",
-      "reward": 200.0,
-      "currency": "USD",
-      "status": "ARCHIVED",
-      "score": 45.68,
-      "expected_value": -31.01,
-      "risk_adjusted_ev": -31.01,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=45.68; ev_usd=-31.01; ev_efficiency=-2.0006; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=3.1; freshness=0.150; age_hours_at_discovery=3698.72980917",
-      "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/5"
     },
     {
       "title": "[BOUNTY] WearOS Support [$1340]",
@@ -1504,19 +1448,6 @@
       "url": "https://github.com/kendraio/kendraio-app/issues/184"
     },
     {
-      "title": "[Bounty $1500] logaddexp / logaddexp2: overflow-safe reformulation",
-      "repository": "tenstorrent/tt-metal",
-      "source": "github_public_rewards",
-      "reward": 1500.0,
-      "currency": "USD",
-      "status": "ARCHIVED",
-      "score": 59.19,
-      "expected_value": -68.03,
-      "risk_adjusted_ev": -68.03,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=59.19; ev_usd=-68.03; ev_efficiency=-1.6198; acceptance_probability=0.180; payment_probability=0.069; competition=0.184; estimated_hours=8.4; freshness=0.400; age_hours_at_discovery=574.041142888",
-      "url": "https://github.com/tenstorrent/tt-metal/issues/52037"
-    },
-    {
       "title": "Frantic bounty #113: Get Sourcey docs adopted upstream",
       "repository": "auscaster/frantic-board",
       "source": "github_public_rewards",
@@ -1530,17 +1461,30 @@
       "url": "https://github.com/auscaster/frantic-board/issues/299"
     },
     {
-      "title": "Frantic bounty #120: Add a valuable startup offer to Sourcey",
-      "repository": "auscaster/frantic-board",
+      "title": "[Bounty] [Bounty] Seed a paid API child bounty",
+      "repository": "zhangjiayang6835-cyber/bounty-plaza",
       "source": "github_public_rewards",
-      "reward": 1.0,
+      "reward": 90.0,
       "currency": "USD",
       "status": "ARCHIVED",
-      "score": 45.53,
-      "expected_value": -31.99,
-      "risk_adjusted_ev": -31.99,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=45.53; ev_usd=-31.99; ev_efficiency=-2.2850; acceptance_probability=0.180; payment_probability=0.061; competition=0.045; estimated_hours=2.8; freshness=0.400; age_hours_at_discovery=613.372247224",
-      "url": "https://github.com/auscaster/frantic-board/issues/330"
+      "score": 0.0,
+      "expected_value": 0.0,
+      "risk_adjusted_ev": 0.0,
+      "reason": "Not a direct monetary bounty: mirror_or_internal_coin_listing",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/817"
+    },
+    {
+      "title": "[Bounty] [Bounty] Seed a paid CLI child bounty",
+      "repository": "zhangjiayang6835-cyber/bounty-plaza",
+      "source": "github_public_rewards",
+      "reward": 90.0,
+      "currency": "USD",
+      "status": "ARCHIVED",
+      "score": 0.0,
+      "expected_value": 0.0,
+      "risk_adjusted_ev": 0.0,
+      "reason": "Not a direct monetary bounty: mirror_or_internal_coin_listing",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/815"
     },
     {
       "title": "Bounty: end-to-end test copperhead create (brief → clean full run) + findings report",
@@ -1554,6 +1498,19 @@
       "risk_adjusted_ev": -67.38,
       "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=60.94; ev_usd=-67.38; ev_efficiency=-1.9818; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=6.8; freshness=0.150; age_hours_at_discovery=835.363352281",
       "url": "https://github.com/copperheadhq/copperhead/issues/66"
+    },
+    {
+      "title": "research-plan rubric: the N/A clause the judge never applies, and no dimension that can fail on an omission",
+      "repository": "PioneerAIAcademy/cowork-genealogy",
+      "source": "github_public_rewards",
+      "reward": 6.31,
+      "currency": "USD",
+      "status": "ARCHIVED",
+      "score": 52.64,
+      "expected_value": 0.0,
+      "risk_adjusted_ev": 0.0,
+      "reason": "Not a direct monetary bounty: test_run_cost_not_offer",
+      "url": "https://github.com/PioneerAIAcademy/cowork-genealogy/issues/1913"
     },
     {
       "title": "Add unit tests for `src.services.service_utils`",
@@ -2217,6 +2174,58 @@
       "risk_adjusted_ev": 0.0,
       "reason": "Not a direct monetary bounty: end_user_promotion_not_offer",
       "url": "https://github.com/GoodDollar/GoodWidget/issues/127"
+    },
+    {
+      "title": "[Ecosystem Fit] BOT Chain Ecosystem Support — WEAK FIT (29/100) — Scheme C — assessed 2026-08-02",
+      "repository": "webnxt-2030/ember2",
+      "source": "github_public_rewards",
+      "reward": 150000.0,
+      "currency": "USD",
+      "status": "ARCHIVED",
+      "score": 0.0,
+      "expected_value": 0.0,
+      "risk_adjusted_ev": 0.0,
+      "reason": "Not a direct monetary bounty: amount_is_complaint_or_cost, likely_reference_not_offer",
+      "url": "https://github.com/webnxt-2030/ember2/issues/181"
+    },
+    {
+      "title": "[Bounty] [DIRECT] Show solver cash margin before claim",
+      "repository": "zhangjiayang6835-cyber/bounty-plaza",
+      "source": "github_public_rewards",
+      "reward": 99.0,
+      "currency": "USD",
+      "status": "ARCHIVED",
+      "score": 55.73,
+      "expected_value": 0.0,
+      "risk_adjusted_ev": 0.0,
+      "reason": "Not a direct monetary bounty: mirror_or_internal_coin_listing",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/736"
+    },
+    {
+      "title": "Onboarding",
+      "repository": "surf-sound/lifestealz",
+      "source": "github_public_rewards",
+      "reward": 10000.0,
+      "currency": "USD",
+      "status": "ARCHIVED",
+      "score": 39.52,
+      "expected_value": 0.0,
+      "risk_adjusted_ev": 0.0,
+      "reason": "Not a direct monetary bounty: in_game_currency_not_offer",
+      "url": "https://github.com/surf-sound/lifestealz/issues/10"
+    },
+    {
+      "title": "fix!(lua.endpoints): cash_out fires before round-eval rows commit — rewards under-collected, sometimes $0",
+      "repository": "coder/balatrobot",
+      "source": "github_public_rewards",
+      "reward": 5.0,
+      "currency": "USD",
+      "status": "ARCHIVED",
+      "score": 51.99,
+      "expected_value": 0.0,
+      "risk_adjusted_ev": 0.0,
+      "reason": "Not a direct monetary bounty: in_game_currency_not_offer",
+      "url": "https://github.com/coder/balatrobot/issues/231"
     }
   ],
   "sources": [
@@ -2225,7 +2234,7 @@
       "enabled": false,
       "status": "MONITOR_ONLY_POLICY_INCOMPLETE",
       "last_verified": "2026-08-19",
-      "items_found": 769,
+      "items_found": 781,
       "failures": 0
     },
     {
@@ -2233,7 +2242,7 @@
       "enabled": false,
       "status": "MONITOR_ONLY_POLICY_INCOMPLETE",
       "last_verified": "2026-08-25",
-      "items_found": 91,
+      "items_found": 92,
       "failures": 0
     },
     {
@@ -2249,7 +2258,7 @@
       "enabled": false,
       "status": "LEAD_ONLY",
       "last_verified": "2026-08-19",
-      "items_found": 7177,
+      "items_found": 7308,
       "failures": 0
     }
   ]
