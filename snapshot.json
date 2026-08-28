@@ -1,18 +1,18 @@
 {
   "schema": "bca-public-dashboard-v1",
-  "generated_at": "2026-08-27T22:18:50.072858+00:00",
+  "generated_at": "2026-08-28T04:15:23.285272+00:00",
   "status": "RUNNING",
   "data_freshness": "CURRENT",
   "kpis": {
-    "opportunities_scanned": 157,
-    "items_observed": 7377,
-    "scan_runs": 259,
-    "agent_count": 50,
-    "fresh_opportunities": 1,
+    "opportunities_scanned": 161,
+    "items_observed": 8261,
+    "scan_runs": 283,
+    "agent_count": 51,
+    "fresh_opportunities": 0,
     "technically_ready": 0,
     "selected": 0,
-    "queued": 83,
-    "rejected": 7,
+    "queued": 0,
+    "rejected": 9,
     "policy_blocked": 0,
     "submissions": 1,
     "paid": 0
@@ -526,6 +526,16 @@
       "last_decision": "N/A",
       "failures": 0,
       "escalation": "—"
+    },
+    {
+      "role": "ASSET_MARKETING_AGENT",
+      "status": "CONFIGURED",
+      "trigger": "after asset publication and every performance refresh",
+      "kpi": "qualified visits, attributed conversions and verified net revenue",
+      "last_run": "N/A",
+      "last_decision": "N/A",
+      "failures": 0,
+      "escalation": "—"
     }
   ],
   "self_improvement": {
@@ -606,14 +616,14 @@
     "paid": 0.0
   },
   "rrae_pipeline": {
-    "detected": 28,
+    "detected": 35,
     "qualified": 0,
     "matched": 0,
     "executed": 0,
     "converted": 0,
     "paid": 0,
     "owner_actions_required": 7,
-    "rejected": 28
+    "rejected": 35
   },
   "revenue_by_engine": {
     "rrae": 0.0,
@@ -632,16 +642,16 @@
   },
   "universal_revenue": {
     "status": "ACTIVE",
-    "decisions_this_cycle": 185,
+    "decisions_this_cycle": 196,
     "routed": 0,
     "needs_analysis": 0,
-    "needs_verification": 2,
-    "rejected": 183,
+    "needs_verification": 0,
+    "rejected": 196,
     "unknown_models": 0,
     "strategies_enabled": 11,
-    "radar_raw_signals": 185,
-    "radar_normalized_signals": 185,
-    "money_verified": 7,
+    "radar_raw_signals": 196,
+    "radar_normalized_signals": 196,
+    "money_verified": 8,
     "portfolio_status": "WAITING_FOR_VERIFIED_ECONOMICS",
     "primary_strategy": "N/A",
     "primary_ev_per_hour": 0.0,
@@ -676,8 +686,8 @@
     "territories": []
   },
   "rrae_assets": {
-    "count": 1,
-    "active": 1
+    "count": 2,
+    "active": 2
   },
   "partner_performance": [
     {
@@ -695,7 +705,7 @@
   "vertical_performance": [
     {
       "vertical": "ai-tools",
-      "detected": 1,
+      "detected": 2,
       "qualified": 0,
       "conversions": 0,
       "commission_mrr": 0.0,
@@ -713,7 +723,7 @@
     },
     {
       "vertical": "automation",
-      "detected": 9,
+      "detected": 13,
       "qualified": 0,
       "conversions": 0,
       "commission_mrr": 0.0,
@@ -731,7 +741,7 @@
     },
     {
       "vertical": "developer-tooling",
-      "detected": 1,
+      "detected": 2,
       "qualified": 0,
       "conversions": 0,
       "commission_mrr": 0.0,
@@ -767,7 +777,7 @@
     },
     {
       "vertical": "payments",
-      "detected": 1,
+      "detected": 2,
       "qualified": 0,
       "conversions": 0,
       "commission_mrr": 0.0,
@@ -841,7 +851,7 @@
   "source_performance": [
     {
       "source": "github_public_buyer_intent",
-      "detected": 28,
+      "detected": 35,
       "qualified": 0,
       "ev_per_100": 0.0,
       "conversion_rate": 0.0,
@@ -918,8 +928,21 @@
       "score": 44.01,
       "expected_value": -31.38,
       "risk_adjusted_ev": -31.38,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=44.01; ev_usd=-31.38; ev_efficiency=-2.2414; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=2.8; freshness=0.150; age_hours_at_discovery=3671.79206957",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=44.01; ev_usd=-31.38; ev_efficiency=-2.2414; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=2.8; freshness=0.150; age_hours_at_discovery=3698.73197184",
       "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/1"
+    },
+    {
+      "title": "Subgroups in Gitea",
+      "repository": "go-gitea/gitea",
+      "source": "algora_public",
+      "reward": 80.0,
+      "currency": "USD",
+      "status": "ARCHIVED",
+      "score": 55.59,
+      "expected_value": -59.44,
+      "risk_adjusted_ev": -59.44,
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=55.59; ev_usd=-59.44; ev_efficiency=-1.6983; acceptance_probability=0.609; payment_probability=0.255; competition=0.381; estimated_hours=7.0; freshness=0.250; age_hours_at_discovery=None; policy_",
+      "url": "https://algora.io/go-gitea/bounties/community?fund=go-gitea%2Fgitea%231872"
     },
     {
       "title": "Multi-Processor Mac",
@@ -927,11 +950,11 @@
       "source": "issuehunt_oss",
       "reward": 2.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
+      "status": "ARCHIVED",
       "score": 49.85,
       "expected_value": -62.96,
       "risk_adjusted_ev": -62.96,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=49.85; ev_usd=-62.96; ev_efficiency=-1.9372; acceptance_probability=0.180; payment_probability=0.104; competition=0.263; estimated_hours=6.5; freshness=0.150; age_hours_at_discovery=3877.91477243",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=49.85; ev_usd=-62.96; ev_efficiency=-1.9372; acceptance_probability=0.180; payment_probability=0.104; competition=0.263; estimated_hours=6.5; freshness=0.150; age_hours_at_discovery=3904.85595529",
       "url": "https://github.com/pannous/redox/issues/4"
     },
     {
@@ -940,7 +963,7 @@
       "source": "algora_public",
       "reward": 300.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
+      "status": "ARCHIVED",
       "score": 56.29,
       "expected_value": -34.76,
       "risk_adjusted_ev": -34.76,
@@ -948,25 +971,12 @@
       "url": "https://algora.io/go-gitea/bounties/community?fund=go-gitea%2Fgitea%234898"
     },
     {
-      "title": "Subgroups in Gitea",
-      "repository": "go-gitea/gitea",
-      "source": "algora_public",
-      "reward": 80.0,
-      "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
-      "score": 55.59,
-      "expected_value": -59.44,
-      "risk_adjusted_ev": -59.44,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=55.59; ev_usd=-59.44; ev_efficiency=-1.6983; acceptance_probability=0.609; payment_probability=0.255; competition=0.381; estimated_hours=7.0; freshness=0.250; age_hours_at_discovery=None; policy_",
-      "url": "https://algora.io/go-gitea/bounties/community?fund=go-gitea%2Fgitea%231872"
-    },
-    {
       "title": "Ability to backup to more destination types",
       "repository": "Dokploy/dokploy",
       "source": "algora_public",
       "reward": 50.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
+      "status": "ARCHIVED",
       "score": 55.96,
       "expected_value": -37.88,
       "risk_adjusted_ev": -37.88,
@@ -979,11 +989,11 @@
       "source": "algora_public",
       "reward": 100.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
-      "score": 55.68,
-      "expected_value": -51.3,
-      "risk_adjusted_ev": -51.3,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=55.68; ev_usd=-51.30; ev_efficiency=-1.6031; acceptance_probability=0.586; payment_probability=0.255; competition=0.041; estimated_hours=6.4; freshness=0.250; age_hours_at_discovery=None; policy_",
+      "status": "ARCHIVED",
+      "score": 55.61,
+      "expected_value": -52.3,
+      "risk_adjusted_ev": -52.3,
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=55.61; ev_usd=-52.30; ev_efficiency=-1.6092; acceptance_probability=0.586; payment_probability=0.255; competition=0.041; estimated_hours=6.5; freshness=0.250; age_hours_at_discovery=None; policy_",
       "url": "https://algora.io/Dokploy/bounties/community?fund=Dokploy%2Fdokploy%231413"
     },
     {
@@ -992,7 +1002,7 @@
       "source": "algora_public",
       "reward": 30.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
+      "status": "ARCHIVED",
       "score": 53.78,
       "expected_value": -47.83,
       "risk_adjusted_ev": -47.83,
@@ -1005,7 +1015,7 @@
       "source": "algora_public",
       "reward": 25.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
+      "status": "ARCHIVED",
       "score": 55.72,
       "expected_value": -48.02,
       "risk_adjusted_ev": -48.02,
@@ -1031,25 +1041,12 @@
       "source": "github_public_rewards",
       "reward": 50.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
+      "status": "ARCHIVED",
       "score": 46.85,
       "expected_value": -54.67,
       "risk_adjusted_ev": -54.67,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=46.85; ev_usd=-54.67; ev_efficiency=-1.9182; acceptance_probability=0.180; payment_probability=0.061; competition=0.000; estimated_hours=5.7; freshness=0.150; age_hours_at_discovery=1612.37522808",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=46.85; ev_usd=-54.67; ev_efficiency=-1.9182; acceptance_probability=0.180; payment_probability=0.061; competition=0.000; estimated_hours=5.7; freshness=0.150; age_hours_at_discovery=1639.31510709",
       "url": "https://github.com/lb1192176991-lab/zeroeye/issues/2"
-    },
-    {
-      "title": "[BOUNTY $80] Notifications — 统一通知中心 (Gotify + Apprise)",
-      "repository": "illbnm/homelab-stack",
-      "source": "github_public_rewards",
-      "reward": 80.0,
-      "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
-      "score": 44.55,
-      "expected_value": -43.25,
-      "risk_adjusted_ev": -43.25,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=44.55; ev_usd=-43.25; ev_efficiency=-1.9659; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=4.4; freshness=0.150; age_hours_at_discovery=3904.67654441",
-      "url": "https://github.com/illbnm/homelab-stack/issues/13"
     },
     {
       "title": "[BOUNTY $300] SSO — Authentik 统一身份认证",
@@ -1057,11 +1054,11 @@
       "source": "github_public_rewards",
       "reward": 300.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
+      "status": "ARCHIVED",
       "score": 44.81,
       "expected_value": -46.21,
       "risk_adjusted_ev": -46.21,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=44.81; ev_usd=-46.21; ev_efficiency=-1.8861; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=4.9; freshness=0.150; age_hours_at_discovery=3904.68153195",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=44.81; ev_usd=-46.21; ev_efficiency=-1.8861; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=4.9; freshness=0.150; age_hours_at_discovery=3931.62149357",
       "url": "https://github.com/illbnm/homelab-stack/issues/9"
     },
     {
@@ -1083,11 +1080,11 @@
       "source": "github_public_rewards",
       "reward": 150.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
+      "status": "ARCHIVED",
       "score": 43.2,
       "expected_value": -36.1,
       "risk_adjusted_ev": -36.1,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=43.20; ev_usd=-36.10; ev_efficiency=-2.0629; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=3.5; freshness=0.150; age_hours_at_discovery=3904.67737365",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=43.20; ev_usd=-36.10; ev_efficiency=-2.0629; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=3.5; freshness=0.150; age_hours_at_discovery=3931.61732206",
       "url": "https://github.com/illbnm/homelab-stack/issues/12"
     },
     {
@@ -1097,7 +1094,7 @@
       "reward": 337.0,
       "currency": "USD",
       "status": "ARCHIVED",
-      "score": 0.0,
+      "score": 49.73,
       "expected_value": 0.0,
       "risk_adjusted_ev": 0.0,
       "reason": "Not a direct monetary bounty: mirror_or_internal_coin_listing",
@@ -1109,11 +1106,11 @@
       "source": "github_public_rewards",
       "reward": 10.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
-      "score": 0.0,
-      "expected_value": 0.0,
-      "risk_adjusted_ev": 0.0,
-      "reason": "clear_acceptance",
+      "status": "ARCHIVED",
+      "score": 61.27,
+      "expected_value": -33.29,
+      "risk_adjusted_ev": -33.29,
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=61.27; ev_usd=-33.29; ev_efficiency=-1.7072; acceptance_probability=0.180; payment_probability=0.127; competition=0.000; estimated_hours=3.9; freshness=0.150; age_hours_at_discovery=1333.11398516",
       "url": "https://github.com/Nexussyn/ai-growth-engine/issues/4"
     },
     {
@@ -1122,11 +1119,11 @@
       "source": "github_public_rewards",
       "reward": 100.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
+      "status": "ARCHIVED",
       "score": 42.72,
       "expected_value": -30.75,
       "risk_adjusted_ev": -30.75,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=42.72; ev_usd=-30.75; ev_efficiency=-2.1964; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=2.8; freshness=0.150; age_hours_at_discovery=3671.79096848",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=42.72; ev_usd=-30.75; ev_efficiency=-2.1964; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=2.8; freshness=0.150; age_hours_at_discovery=3698.73092774",
       "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/3"
     },
     {
@@ -1135,11 +1132,11 @@
       "source": "github_public_rewards",
       "reward": 280.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
+      "status": "ARCHIVED",
       "score": 44.75,
       "expected_value": -44.39,
       "risk_adjusted_ev": -44.39,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=44.75; ev_usd=-44.39; ev_efficiency=-1.8889; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=4.7; freshness=0.150; age_hours_at_discovery=3904.68105309",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=44.75; ev_usd=-44.39; ev_efficiency=-1.8889; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=4.7; freshness=0.150; age_hours_at_discovery=3931.62092587",
       "url": "https://github.com/illbnm/homelab-stack/issues/10"
     },
     {
@@ -1148,11 +1145,11 @@
       "source": "github_public_rewards",
       "reward": 280.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
+      "status": "ARCHIVED",
       "score": 46.07,
       "expected_value": -54.39,
       "risk_adjusted_ev": -54.39,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=46.07; ev_usd=-54.39; ev_efficiency=-1.9084; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=5.7; freshness=0.150; age_hours_at_discovery=3904.67600101",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=46.07; ev_usd=-54.39; ev_efficiency=-1.9084; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=5.7; freshness=0.150; age_hours_at_discovery=3931.61592395",
       "url": "https://github.com/illbnm/homelab-stack/issues/14"
     },
     {
@@ -1161,11 +1158,11 @@
       "source": "github_public_rewards",
       "reward": 130.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
+      "status": "ARCHIVED",
       "score": 43.31,
       "expected_value": -44.79,
       "risk_adjusted_ev": -44.79,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=43.31; ev_usd=-44.79; ev_efficiency=-1.9474; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=4.6; freshness=0.150; age_hours_at_discovery=3904.67800172",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=43.31; ev_usd=-44.79; ev_efficiency=-1.9474; acceptance_probability=0.180; payment_probability=0.069; competition=0.000; estimated_hours=4.6; freshness=0.150; age_hours_at_discovery=3931.61786660",
       "url": "https://github.com/illbnm/homelab-stack/issues/11"
     },
     {
@@ -1174,25 +1171,12 @@
       "source": "github_public_rewards",
       "reward": 200.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
+      "status": "ARCHIVED",
       "score": 45.68,
       "expected_value": -31.01,
       "risk_adjusted_ev": -31.01,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=45.68; ev_usd=-31.01; ev_efficiency=-2.0006; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=3.1; freshness=0.150; age_hours_at_discovery=3671.78984959",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=45.68; ev_usd=-31.01; ev_efficiency=-2.0006; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=3.1; freshness=0.150; age_hours_at_discovery=3698.72980917",
       "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/5"
-    },
-    {
-      "title": "Kendraio App MusicBrainz integration (bounty)",
-      "repository": "kendraio/kendraio-app",
-      "source": "github_public_rewards",
-      "reward": 500.0,
-      "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
-      "score": 63.77,
-      "expected_value": -58.34,
-      "risk_adjusted_ev": -58.34,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=63.77; ev_usd=-58.34; ev_efficiency=-1.8521; acceptance_probability=0.180; payment_probability=0.069; competition=0.572; estimated_hours=6.3; freshness=0.150; age_hours_at_discovery=46740.2101595",
-      "url": "https://github.com/kendraio/kendraio-app/issues/184"
     },
     {
       "title": "[BOUNTY] WearOS Support [$1340]",
@@ -1213,11 +1197,11 @@
       "source": "github_public_rewards",
       "reward": 150.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
+      "status": "ARCHIVED",
       "score": 45.15,
       "expected_value": -29.13,
       "risk_adjusted_ev": -29.13,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=45.15; ev_usd=-29.13; ev_efficiency=-2.2408; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=2.6; freshness=0.150; age_hours_at_discovery=3671.79040901",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=45.15; ev_usd=-29.13; ev_efficiency=-2.2408; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=2.6; freshness=0.150; age_hours_at_discovery=3698.73036070",
       "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4"
     },
     {
@@ -1226,25 +1210,12 @@
       "source": "github_public_rewards",
       "reward": 500.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
-      "score": 0.0,
-      "expected_value": 0.0,
-      "risk_adjusted_ev": 0.0,
-      "reason": "clear_acceptance",
+      "status": "ARCHIVED",
+      "score": 60.52,
+      "expected_value": -33.95,
+      "risk_adjusted_ev": -33.95,
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=60.52; ev_usd=-33.95; ev_efficiency=-1.4447; acceptance_probability=0.604; payment_probability=0.061; competition=0.262; estimated_hours=4.7; freshness=0.150; age_hours_at_discovery=4351.60646623",
       "url": "https://github.com/Scottcjn/Rustchain/issues/425"
-    },
-    {
-      "title": "Frantic bounty #113: Get Sourcey docs adopted upstream",
-      "repository": "auscaster/frantic-board",
-      "source": "github_public_rewards",
-      "reward": 18.0,
-      "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
-      "score": 0.0,
-      "expected_value": 0.0,
-      "risk_adjusted_ev": 0.0,
-      "reason": "clear_acceptance",
-      "url": "https://github.com/auscaster/frantic-board/issues/299"
     },
     {
       "title": "[BOUNTY $75] TEMPLATE: CLAUDE.md for a Next.js + SQLite SaaS project",
@@ -1252,11 +1223,11 @@
       "source": "github_public_rewards",
       "reward": 75.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
+      "status": "ARCHIVED",
       "score": 46.04,
       "expected_value": -30.06,
       "risk_adjusted_ev": -30.06,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=46.04; ev_usd=-30.06; ev_efficiency=-2.3123; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=2.6; freshness=0.150; age_hours_at_discovery=3671.79152798",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=46.04; ev_usd=-30.06; ev_efficiency=-2.3123; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=2.6; freshness=0.150; age_hours_at_discovery=3698.73146442",
       "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/2"
     },
     {
@@ -1265,11 +1236,11 @@
       "source": "github_public_rewards",
       "reward": 25000.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
-      "score": 0.0,
-      "expected_value": 0.0,
-      "risk_adjusted_ev": 0.0,
-      "reason": "clear_acceptance",
+      "status": "ARCHIVED",
+      "score": 55.43,
+      "expected_value": -31.5,
+      "risk_adjusted_ev": -31.5,
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=55.43; ev_usd=-31.50; ev_efficiency=-1.8000; acceptance_probability=0.180; payment_probability=0.020; competition=0.000; estimated_hours=3.5; freshness=0.400; age_hours_at_discovery=195.073406900",
       "url": "https://github.com/mister3ai-cmyk/ngp-sovereign-synesis-bounties/issues/2"
     },
     {
@@ -1304,11 +1275,11 @@
       "source": "github_public_rewards",
       "reward": 15000.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
-      "score": 0.0,
-      "expected_value": 0.0,
-      "risk_adjusted_ev": 0.0,
-      "reason": "clear_acceptance",
+      "status": "ARCHIVED",
+      "score": 55.84,
+      "expected_value": -35.5,
+      "risk_adjusted_ev": -35.5,
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=55.84; ev_usd=-35.50; ev_efficiency=-2.0286; acceptance_probability=0.180; payment_probability=0.020; competition=0.521; estimated_hours=3.5; freshness=0.400; age_hours_at_discovery=195.079234653",
       "url": "https://github.com/mister3ai-cmyk/ngp-sovereign-synesis-bounties/issues/1"
     },
     {
@@ -1318,7 +1289,7 @@
       "reward": 2000.0,
       "currency": "USD",
       "status": "ARCHIVED",
-      "score": 50.59,
+      "score": 50.54,
       "expected_value": 0.0,
       "risk_adjusted_ev": 0.0,
       "reason": "Not a direct monetary bounty: mirror_or_internal_coin_listing",
@@ -1330,11 +1301,11 @@
       "source": "github_public_rewards",
       "reward": 1000.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
-      "score": 0.0,
-      "expected_value": 0.0,
-      "risk_adjusted_ev": 0.0,
-      "reason": "clear_acceptance",
+      "status": "ARCHIVED",
+      "score": 59.39,
+      "expected_value": -0.64,
+      "risk_adjusted_ev": -0.64,
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=59.39; ev_usd=-0.64; ev_efficiency=-0.0427; acceptance_probability=0.467; payment_probability=0.077; competition=0.262; estimated_hours=3.0; freshness=0.150; age_hours_at_discovery=2061.718119808",
       "url": "https://github.com/xevrion-v2/agent-playground/issues/17"
     },
     {
@@ -1343,11 +1314,11 @@
       "source": "github_public_rewards",
       "reward": 800.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
-      "score": 0.0,
-      "expected_value": 0.0,
-      "risk_adjusted_ev": 0.0,
-      "reason": "clear_acceptance",
+      "status": "ARCHIVED",
+      "score": 62.25,
+      "expected_value": -25.02,
+      "risk_adjusted_ev": -25.02,
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=62.25; ev_usd=-25.02; ev_efficiency=-1.4718; acceptance_probability=0.180; payment_probability=0.077; competition=0.178; estimated_hours=3.4; freshness=0.150; age_hours_at_discovery=809.803673623",
       "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/11398"
     },
     {
@@ -1356,11 +1327,11 @@
       "source": "github_public_rewards",
       "reward": 780.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
-      "score": 0.0,
-      "expected_value": 0.0,
-      "risk_adjusted_ev": 0.0,
-      "reason": "clear_acceptance",
+      "status": "ARCHIVED",
+      "score": 64.0,
+      "expected_value": -6.7,
+      "risk_adjusted_ev": -6.7,
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=64.00; ev_usd=-6.70; ev_efficiency=-0.3350; acceptance_probability=0.579; payment_probability=0.077; competition=0.262; estimated_hours=4.0; freshness=0.150; age_hours_at_discovery=2460.590616322",
       "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/80"
     },
     {
@@ -1369,11 +1340,11 @@
       "source": "github_public_rewards",
       "reward": 750.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
-      "score": 0.0,
-      "expected_value": 0.0,
-      "risk_adjusted_ev": 0.0,
-      "reason": "clear_acceptance",
+      "status": "REJECTED",
+      "score": 67.01,
+      "expected_value": -19.09,
+      "risk_adjusted_ev": -19.09,
+      "reason": "allocation=ARCHIVE; promotion=REJECTED; score=67.01; ev_usd=-19.09; ev_efficiency=-0.6698; acceptance_probability=0.691; payment_probability=0.077; competition=0.262; estimated_hours=5.7; freshness=0.150; age_hours_at_discovery=2469.7275589",
       "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/30"
     },
     {
@@ -1382,11 +1353,11 @@
       "source": "github_public_rewards",
       "reward": 700.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
-      "score": 0.0,
-      "expected_value": 0.0,
-      "risk_adjusted_ev": 0.0,
-      "reason": "clear_acceptance",
+      "status": "ARCHIVED",
+      "score": 60.68,
+      "expected_value": -26.27,
+      "risk_adjusted_ev": -26.27,
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=60.68; ev_usd=-26.27; ev_efficiency=-1.5453; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=3.4; freshness=0.150; age_hours_at_discovery=2229.11450164",
       "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/743"
     },
     {
@@ -1395,11 +1366,11 @@
       "source": "github_public_rewards",
       "reward": 500.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
-      "score": 0.0,
-      "expected_value": 0.0,
-      "risk_adjusted_ev": 0.0,
-      "reason": "clear_acceptance",
+      "status": "ARCHIVED",
+      "score": 63.44,
+      "expected_value": -54.87,
+      "risk_adjusted_ev": -54.87,
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=63.44; ev_usd=-54.87; ev_efficiency=-1.4830; acceptance_probability=0.662; payment_probability=0.069; competition=0.262; estimated_hours=7.4; freshness=0.150; age_hours_at_discovery=2469.76977765",
       "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/29"
     },
     {
@@ -1408,11 +1379,11 @@
       "source": "github_public_rewards",
       "reward": 430.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
-      "score": 0.0,
-      "expected_value": 0.0,
-      "risk_adjusted_ev": 0.0,
-      "reason": "clear_acceptance",
+      "status": "ARCHIVED",
+      "score": 63.3,
+      "expected_value": -20.75,
+      "risk_adjusted_ev": -20.75,
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=63.30; ev_usd=-20.75; ev_efficiency=-1.0375; acceptance_probability=0.579; payment_probability=0.077; competition=0.262; estimated_hours=4.0; freshness=0.150; age_hours_at_discovery=2460.62838687",
       "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/76"
     },
     {
@@ -1421,11 +1392,11 @@
       "source": "github_public_rewards",
       "reward": 350.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
-      "score": 0.0,
-      "expected_value": 0.0,
-      "risk_adjusted_ev": 0.0,
-      "reason": "clear_acceptance",
+      "status": "ARCHIVED",
+      "score": 67.3,
+      "expected_value": -30.24,
+      "risk_adjusted_ev": -30.24,
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=67.30; ev_usd=-30.24; ev_efficiency=-1.2343; acceptance_probability=0.691; payment_probability=0.077; competition=0.262; estimated_hours=4.9; freshness=0.150; age_hours_at_discovery=2482.81560390",
       "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/1"
     },
     {
@@ -1499,11 +1470,11 @@
       "source": "github_public_rewards",
       "reward": 50.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
+      "status": "ARCHIVED",
       "score": 54.38,
       "expected_value": -32.38,
       "risk_adjusted_ev": -32.38,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=54.38; ev_usd=-32.38; ev_efficiency=-2.1587; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=3.0; freshness=0.150; age_hours_at_discovery=2034.87184007",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=54.38; ev_usd=-32.38; ev_efficiency=-2.1587; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=3.0; freshness=0.150; age_hours_at_discovery=2061.81170385",
       "url": "https://github.com/xevrion-v2/agent-playground/issues/2"
     },
     {
@@ -1512,12 +1483,51 @@
       "source": "github_public_rewards",
       "reward": 50.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
-      "score": 0.0,
-      "expected_value": 0.0,
-      "risk_adjusted_ev": 0.0,
-      "reason": "clear_acceptance",
+      "status": "ARCHIVED",
+      "score": 54.4,
+      "expected_value": -32.38,
+      "risk_adjusted_ev": -32.38,
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=54.40; ev_usd=-32.38; ev_efficiency=-2.1587; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=3.0; freshness=0.150; age_hours_at_discovery=2061.81170214",
       "url": "https://github.com/xevrion-v2/agent-playground/issues/1"
+    },
+    {
+      "title": "Kendraio App MusicBrainz integration (bounty)",
+      "repository": "kendraio/kendraio-app",
+      "source": "github_public_rewards",
+      "reward": 500.0,
+      "currency": "USD",
+      "status": "ARCHIVED",
+      "score": 63.63,
+      "expected_value": -58.34,
+      "risk_adjusted_ev": -58.34,
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=63.63; ev_usd=-58.34; ev_efficiency=-1.8521; acceptance_probability=0.180; payment_probability=0.069; competition=0.555; estimated_hours=6.3; freshness=0.150; age_hours_at_discovery=46767.1500336",
+      "url": "https://github.com/kendraio/kendraio-app/issues/184"
+    },
+    {
+      "title": "[Bounty $1500] logaddexp / logaddexp2: overflow-safe reformulation",
+      "repository": "tenstorrent/tt-metal",
+      "source": "github_public_rewards",
+      "reward": 1500.0,
+      "currency": "USD",
+      "status": "ARCHIVED",
+      "score": 59.19,
+      "expected_value": -68.03,
+      "risk_adjusted_ev": -68.03,
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=59.19; ev_usd=-68.03; ev_efficiency=-1.6198; acceptance_probability=0.180; payment_probability=0.069; competition=0.184; estimated_hours=8.4; freshness=0.400; age_hours_at_discovery=574.041142888",
+      "url": "https://github.com/tenstorrent/tt-metal/issues/52037"
+    },
+    {
+      "title": "Frantic bounty #113: Get Sourcey docs adopted upstream",
+      "repository": "auscaster/frantic-board",
+      "source": "github_public_rewards",
+      "reward": 18.0,
+      "currency": "USD",
+      "status": "ARCHIVED",
+      "score": 49.37,
+      "expected_value": -31.65,
+      "risk_adjusted_ev": -31.65,
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=49.37; ev_usd=-31.65; ev_efficiency=-2.2607; acceptance_probability=0.525; payment_probability=0.061; competition=0.523; estimated_hours=2.8; freshness=0.150; age_hours_at_discovery=1127.32030708",
+      "url": "https://github.com/auscaster/frantic-board/issues/299"
     },
     {
       "title": "Frantic bounty #120: Add a valuable startup offer to Sourcey",
@@ -1525,11 +1535,11 @@
       "source": "github_public_rewards",
       "reward": 1.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
-      "score": 0.0,
-      "expected_value": 0.0,
-      "risk_adjusted_ev": 0.0,
-      "reason": "clear_acceptance",
+      "status": "ARCHIVED",
+      "score": 45.53,
+      "expected_value": -31.99,
+      "risk_adjusted_ev": -31.99,
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=45.53; ev_usd=-31.99; ev_efficiency=-2.2850; acceptance_probability=0.180; payment_probability=0.061; competition=0.045; estimated_hours=2.8; freshness=0.400; age_hours_at_discovery=613.372247224",
       "url": "https://github.com/auscaster/frantic-board/issues/330"
     },
     {
@@ -1538,11 +1548,11 @@
       "source": "github_public_rewards",
       "reward": 50.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
+      "status": "ARCHIVED",
       "score": 60.94,
       "expected_value": -67.38,
       "risk_adjusted_ev": -67.38,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=60.94; ev_usd=-67.38; ev_efficiency=-1.9818; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=6.8; freshness=0.150; age_hours_at_discovery=808.423629158",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=60.94; ev_usd=-67.38; ev_efficiency=-1.9818; acceptance_probability=0.180; payment_probability=0.077; competition=0.000; estimated_hours=6.8; freshness=0.150; age_hours_at_discovery=835.363352281",
       "url": "https://github.com/copperheadhq/copperhead/issues/66"
     },
     {
@@ -1551,11 +1561,11 @@
       "source": "github_public_rewards",
       "reward": 200.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
+      "status": "ARCHIVED",
       "score": 64.32,
       "expected_value": -93.51,
       "risk_adjusted_ev": -93.51,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=64.32; ev_usd=-93.51; ev_efficiency=-1.9084; acceptance_probability=0.180; payment_probability=0.077; competition=0.485; estimated_hours=9.8; freshness=0.150; age_hours_at_discovery=3005.42306959",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=64.32; ev_usd=-93.51; ev_efficiency=-1.9084; acceptance_probability=0.180; payment_probability=0.077; competition=0.485; estimated_hours=9.8; freshness=0.150; age_hours_at_discovery=3032.36279474",
       "url": "https://github.com/HHS/simpler-grants-gov/issues/9814"
     },
     {
@@ -1715,16 +1725,29 @@
       "url": "https://github.com/Expensify/App/issues/95750"
     },
     {
+      "title": "[Bug]: Recurring autonomous API usage after previous fix: OpenClaw generated over $44 in unintended OpenRouter charges",
+      "repository": "openclaw/openclaw",
+      "source": "github_public_rewards",
+      "reward": 44.0,
+      "currency": "USD",
+      "status": "ARCHIVED",
+      "score": 0.0,
+      "expected_value": 0.0,
+      "risk_adjusted_ev": 0.0,
+      "reason": "Not a direct monetary bounty: amount_is_complaint_or_cost, likely_reference_not_offer",
+      "url": "https://github.com/openclaw/openclaw/issues/121199"
+    },
+    {
       "title": "The Big Elephant in the room",
       "repository": "Semantic-Org/Semantic-UI",
       "source": "github_public_rewards",
       "reward": 1.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
+      "status": "ARCHIVED",
       "score": 50.09,
       "expected_value": -57.99,
       "risk_adjusted_ev": -57.99,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=50.09; ev_usd=-57.99; ev_efficiency=-1.9330; acceptance_probability=0.669; payment_probability=0.050; competition=0.852; estimated_hours=6.0; freshness=0.150; age_hours_at_discovery=63404.6636070",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=50.09; ev_usd=-57.99; ev_efficiency=-1.9330; acceptance_probability=0.669; payment_probability=0.050; competition=0.852; estimated_hours=6.0; freshness=0.150; age_hours_at_discovery=63431.6033147",
       "url": "https://github.com/Semantic-Org/Semantic-UI/issues/6821"
     },
     {
@@ -1733,11 +1756,11 @@
       "source": "github_public_rewards",
       "reward": 30000000.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
+      "status": "ARCHIVED",
       "score": 36.93,
       "expected_value": -27.5,
       "risk_adjusted_ev": -27.5,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=36.93; ev_usd=-27.50; ev_efficiency=-3.6667; acceptance_probability=0.442; payment_probability=0.020; competition=0.859; estimated_hours=1.5; freshness=0.150; age_hours_at_discovery=51127.0419366",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=36.93; ev_usd=-27.50; ev_efficiency=-3.6667; acceptance_probability=0.442; payment_probability=0.020; competition=0.859; estimated_hours=1.5; freshness=0.150; age_hours_at_discovery=51153.9816463",
       "url": "https://github.com/SogurCurrency/Gitcoin-hackathon/issues/6"
     },
     {
@@ -1747,7 +1770,7 @@
       "reward": 3000000.0,
       "currency": "USD",
       "status": "ARCHIVED",
-      "score": 42.29,
+      "score": 40.04,
       "expected_value": 0.0,
       "risk_adjusted_ev": 0.0,
       "reason": "Not a direct monetary bounty: likely_reference_not_offer",
@@ -1772,11 +1795,11 @@
       "source": "github_public_rewards",
       "reward": 25.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
+      "status": "ARCHIVED",
       "score": 37.0,
       "expected_value": -28.88,
       "risk_adjusted_ev": -28.88,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=37.00; ev_usd=-28.88; ev_efficiency=-3.2089; acceptance_probability=0.456; payment_probability=0.042; competition=0.820; estimated_hours=1.8; freshness=0.150; age_hours_at_discovery=23728.4227605",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=37.00; ev_usd=-28.88; ev_efficiency=-3.2089; acceptance_probability=0.456; payment_probability=0.042; competition=0.820; estimated_hours=1.8; freshness=0.150; age_hours_at_discovery=23755.3624741",
       "url": "https://github.com/TypeStrong/discussions/issues/7"
     },
     {
@@ -1850,11 +1873,11 @@
       "source": "github_public_rewards",
       "reward": 100.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
+      "status": "ARCHIVED",
       "score": 42.81,
       "expected_value": -37.91,
       "risk_adjusted_ev": -37.91,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=42.81; ev_usd=-37.91; ev_efficiency=-1.9953; acceptance_probability=0.546; payment_probability=0.050; competition=0.872; estimated_hours=3.8; freshness=0.150; age_hours_at_discovery=47700.6248410",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=42.81; ev_usd=-37.91; ev_efficiency=-1.9953; acceptance_probability=0.546; payment_probability=0.050; competition=0.872; estimated_hours=3.8; freshness=0.150; age_hours_at_discovery=47727.5644074",
       "url": "https://github.com/X-CASH-official/builders-program/issues/3"
     },
     {
@@ -1863,11 +1886,11 @@
       "source": "github_public_rewards",
       "reward": 10.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
+      "status": "ARCHIVED",
       "score": 39.86,
       "expected_value": -33.91,
       "risk_adjusted_ev": -33.91,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=39.86; ev_usd=-33.91; ev_efficiency=-2.4221; acceptance_probability=0.453; payment_probability=0.050; competition=0.872; estimated_hours=2.8; freshness=0.150; age_hours_at_discovery=46537.2831704",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=39.86; ev_usd=-33.91; ev_efficiency=-2.4221; acceptance_probability=0.453; payment_probability=0.050; competition=0.872; estimated_hours=2.8; freshness=0.150; age_hours_at_discovery=46564.2227389",
       "url": "https://github.com/MysteryBlokHed/phasjournal/issues/1"
     },
     {
@@ -1915,11 +1938,11 @@
       "source": "github_public_rewards",
       "reward": 2000.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
+      "status": "ARCHIVED",
       "score": 48.09,
       "expected_value": -13.48,
       "risk_adjusted_ev": -13.48,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=48.09; ev_usd=-13.48; ev_efficiency=-0.5617; acceptance_probability=0.541; payment_probability=0.058; competition=0.872; estimated_hours=4.8; freshness=0.150; age_hours_at_discovery=19200.8242729",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=48.09; ev_usd=-13.48; ev_efficiency=-0.5617; acceptance_probability=0.541; payment_probability=0.058; competition=0.872; estimated_hours=4.8; freshness=0.150; age_hours_at_discovery=19227.7638390",
       "url": "https://github.com/vscodenpa/testissues/issues/46832"
     },
     {
@@ -1967,11 +1990,11 @@
       "source": "github_public_rewards",
       "reward": 500.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
+      "status": "ARCHIVED",
       "score": 45.73,
       "expected_value": -27.44,
       "risk_adjusted_ev": -27.44,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=45.73; ev_usd=-27.44; ev_efficiency=-1.6141; acceptance_probability=0.474; payment_probability=0.058; competition=0.872; estimated_hours=3.4; freshness=0.150; age_hours_at_discovery=10024.7959310",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=45.73; ev_usd=-27.44; ev_efficiency=-1.6141; acceptance_probability=0.474; payment_probability=0.058; competition=0.872; estimated_hours=3.4; freshness=0.150; age_hours_at_discovery=10051.7354983",
       "url": "https://github.com/gbabaisaac/mergefund-bounty-challenges/issues/6"
     },
     {
@@ -1993,11 +2016,11 @@
       "source": "github_public_rewards",
       "reward": 75.0,
       "currency": "USD",
-      "status": "SOURCE_UNVERIFIED",
+      "status": "ARCHIVED",
       "score": 31.67,
       "expected_value": -27.45,
       "risk_adjusted_ev": -27.45,
-      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=31.67; ev_usd=-27.45; ev_efficiency=-3.6600; acceptance_probability=0.180; payment_probability=0.034; competition=0.480; estimated_hours=1.5; freshness=0.150; age_hours_at_discovery=4617.24647782",
+      "reason": "allocation=ARCHIVE; promotion=ARCHIVE; score=31.67; ev_usd=-27.45; ev_efficiency=-3.6600; acceptance_probability=0.180; payment_probability=0.034; competition=0.480; estimated_hours=1.5; freshness=0.150; age_hours_at_discovery=4644.18605084",
       "url": "https://github.com/Andreafr-123/support-escalations/issues/42"
     },
     {
@@ -2189,24 +2212,11 @@
       "reward": 1.0,
       "currency": "USD",
       "status": "ARCHIVED",
-      "score": 58.04,
+      "score": 49.42,
       "expected_value": 0.0,
       "risk_adjusted_ev": 0.0,
       "reason": "Not a direct monetary bounty: end_user_promotion_not_offer",
       "url": "https://github.com/GoodDollar/GoodWidget/issues/127"
-    },
-    {
-      "title": "[Ecosystem Fit] BOT Chain Ecosystem Support — WEAK FIT (29/100) — Scheme C — assessed 2026-08-02",
-      "repository": "webnxt-2030/ember2",
-      "source": "github_public_rewards",
-      "reward": 150000.0,
-      "currency": "USD",
-      "status": "ARCHIVED",
-      "score": 0.0,
-      "expected_value": 0.0,
-      "risk_adjusted_ev": 0.0,
-      "reason": "Not a direct monetary bounty: amount_is_complaint_or_cost, likely_reference_not_offer",
-      "url": "https://github.com/webnxt-2030/ember2/issues/181"
     }
   ],
   "sources": [
@@ -2215,7 +2225,7 @@
       "enabled": false,
       "status": "MONITOR_ONLY_POLICY_INCOMPLETE",
       "last_verified": "2026-08-19",
-      "items_found": 697,
+      "items_found": 769,
       "failures": 0
     },
     {
@@ -2223,7 +2233,7 @@
       "enabled": false,
       "status": "MONITOR_ONLY_POLICY_INCOMPLETE",
       "last_verified": "2026-08-25",
-      "items_found": 85,
+      "items_found": 91,
       "failures": 0
     },
     {
@@ -2239,7 +2249,7 @@
       "enabled": false,
       "status": "LEAD_ONLY",
       "last_verified": "2026-08-19",
-      "items_found": 6371,
+      "items_found": 7177,
       "failures": 0
     }
   ]
